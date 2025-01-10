@@ -1926,3 +1926,1401 @@ select * from source
 [0m17:05:43.471637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1321af6a0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107272fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13241ff70>]}
 [0m17:05:43.471837 [debug] [MainThread]: Flushing usage events
 [0m17:05:43.820845 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:14:33.408019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x119418ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a71bd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a71bed0>]}
+
+
+============================== 17:14:33.411679 | 0b75a36f-8731-4dd5-923c-cc21e82cfb59 ==============================
+[0m17:14:33.411679 [info ] [MainThread]: Running with dbt=1.9.1
+[0m17:14:33.412013 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/mclain/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/mclain/Documents/Software Engineering/ae-dbt/logs', 'warn_error': 'None', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m17:14:34.123105 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1297b6ea0>]}
+[0m17:14:34.152997 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1292de690>]}
+[0m17:14:34.153833 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m17:14:34.223133 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m17:14:34.293643 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 18 files added, 1 files changed.
+[0m17:14:34.294041 [debug] [MainThread]: Partial parsing: added file: ae://models/staging/stg_order_status.sql
+[0m17:14:34.294213 [debug] [MainThread]: Partial parsing: added file: ae://models/staging/stg_suppliers.sql
+[0m17:14:34.294364 [debug] [MainThread]: Partial parsing: added file: ae://models/staging/stg_order_details.sql
+[0m17:14:34.294498 [debug] [MainThread]: Partial parsing: added file: ae://models/staging/stg_invoices.sql
+[0m17:14:34.294626 [debug] [MainThread]: Partial parsing: added file: ae://models/staging/stg_employees.sql
+[0m17:14:34.294752 [debug] [MainThread]: Partial parsing: added file: ae://models/staging/stg_privileges.sql
+[0m17:14:34.294874 [debug] [MainThread]: Partial parsing: added file: ae://models/staging/stg_products.sql
+[0m17:14:34.294992 [debug] [MainThread]: Partial parsing: added file: ae://models/staging/stg_inventory_transaction_types.sql
+[0m17:14:34.295112 [debug] [MainThread]: Partial parsing: added file: ae://models/staging/stg_inventory_transactions.sql
+[0m17:14:34.295352 [debug] [MainThread]: Partial parsing: added file: ae://models/staging/stg_order_details_status.sql
+[0m17:14:34.295528 [debug] [MainThread]: Partial parsing: added file: ae://models/staging/stg_orders.sql
+[0m17:14:34.295672 [debug] [MainThread]: Partial parsing: added file: ae://models/staging/stg_employee_privileges.sql
+[0m17:14:34.295800 [debug] [MainThread]: Partial parsing: added file: ae://models/staging/stg_purchase_order_details.sql
+[0m17:14:34.295924 [debug] [MainThread]: Partial parsing: added file: ae://models/staging/stg_shippers.sql
+[0m17:14:34.296044 [debug] [MainThread]: Partial parsing: added file: ae://models/staging/stg_orders_tax_status.sql
+[0m17:14:34.296176 [debug] [MainThread]: Partial parsing: added file: ae://models/staging/stg_strings.sql
+[0m17:14:34.296295 [debug] [MainThread]: Partial parsing: added file: ae://models/staging/stg_purchase_order_status.sql
+[0m17:14:34.296457 [debug] [MainThread]: Partial parsing: added file: ae://models/staging/stg_purchase_orders.sql
+[0m17:14:34.296811 [debug] [MainThread]: Partial parsing: updated file: ae://models/staging/source.yml
+[0m17:14:34.492456 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x129afd150>]}
+[0m17:14:34.530353 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/manifest.json
+[0m17:14:34.531799 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/semantic_manifest.json
+[0m17:14:34.545481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a29e030>]}
+[0m17:14:34.545804 [info ] [MainThread]: Found 19 models, 19 sources, 470 macros
+[0m17:14:34.546049 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x129c974d0>]}
+[0m17:14:34.547718 [info ] [MainThread]: 
+[0m17:14:34.547975 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m17:14:34.548106 [info ] [MainThread]: 
+[0m17:14:34.548353 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:14:34.550946 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dl_northwind'
+[0m17:14:34.587732 [debug] [ThreadPool]: Using snowflake connection "list_dl_northwind"
+[0m17:14:34.588018 [debug] [ThreadPool]: On list_dl_northwind: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "connection_name": "list_dl_northwind"} */
+show terse schemas in database dl_northwind
+    limit 10000
+[0m17:14:34.588170 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:14:35.559887 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.971 seconds
+[0m17:14:35.562694 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dl_northwind, now list_dl_northwind_PUBLIC_stg_northwind)
+[0m17:14:35.568296 [debug] [ThreadPool]: Using snowflake connection "list_dl_northwind_PUBLIC_stg_northwind"
+[0m17:14:35.568526 [debug] [ThreadPool]: On list_dl_northwind_PUBLIC_stg_northwind: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "connection_name": "list_dl_northwind_PUBLIC_stg_northwind"} */
+show objects in dl_northwind.PUBLIC_stg_northwind limit 10000;
+[0m17:14:35.724483 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.156 seconds
+[0m17:14:35.726086 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x129dcf6c0>]}
+[0m17:14:35.727183 [debug] [Thread-1 (]: Began running node model.ae.stg_customer
+[0m17:14:35.727417 [debug] [Thread-2 (]: Began running node model.ae.stg_employee_privileges
+[0m17:14:35.727730 [info ] [Thread-1 (]: 1 of 19 START sql table model PUBLIC_stg_northwind.stg_customer ................ [RUN]
+[0m17:14:35.727972 [info ] [Thread-2 (]: 2 of 19 START sql table model PUBLIC_stg_northwind.stg_employee_privileges ..... [RUN]
+[0m17:14:35.728241 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dl_northwind_PUBLIC_stg_northwind, now model.ae.stg_customer)
+[0m17:14:35.728514 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.ae.stg_employee_privileges'
+[0m17:14:35.728774 [debug] [Thread-1 (]: Began compiling node model.ae.stg_customer
+[0m17:14:35.728982 [debug] [Thread-2 (]: Began compiling node model.ae.stg_employee_privileges
+[0m17:14:35.733411 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_customer"
+[0m17:14:35.734890 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_employee_privileges"
+[0m17:14:35.735475 [debug] [Thread-1 (]: Began executing node model.ae.stg_customer
+[0m17:14:35.735724 [debug] [Thread-2 (]: Began executing node model.ae.stg_employee_privileges
+[0m17:14:35.759870 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_customer"
+[0m17:14:35.760353 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_employee_privileges"
+[0m17:14:35.761194 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_customer"
+[0m17:14:35.761412 [debug] [Thread-1 (]: On model.ae.stg_customer: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_customer"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_customer
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.customer
+)
+
+select * from source
+        );
+[0m17:14:35.761844 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_employee_privileges"
+[0m17:14:35.762311 [debug] [Thread-2 (]: On model.ae.stg_employee_privileges: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_employee_privileges"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_employee_privileges
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.employee_privileges
+)
+
+select * from source
+        );
+[0m17:14:35.762672 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:14:36.972648 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.210 seconds
+[0m17:14:36.985266 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.223 seconds
+[0m17:14:36.988698 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12a467d10>]}
+[0m17:14:36.989480 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12a5ce990>]}
+[0m17:14:36.989912 [info ] [Thread-1 (]: 1 of 19 OK created sql table model PUBLIC_stg_northwind.stg_customer ........... [[32mSUCCESS 1[0m in 1.26s]
+[0m17:14:36.990281 [info ] [Thread-2 (]: 2 of 19 OK created sql table model PUBLIC_stg_northwind.stg_employee_privileges  [[32mSUCCESS 1[0m in 1.26s]
+[0m17:14:36.990566 [debug] [Thread-1 (]: Finished running node model.ae.stg_customer
+[0m17:14:36.990798 [debug] [Thread-2 (]: Finished running node model.ae.stg_employee_privileges
+[0m17:14:36.990987 [debug] [Thread-1 (]: Began running node model.ae.stg_employees
+[0m17:14:36.991155 [debug] [Thread-2 (]: Began running node model.ae.stg_inventory_transaction_types
+[0m17:14:36.991410 [info ] [Thread-1 (]: 3 of 19 START sql table model PUBLIC_stg_northwind.stg_employees ............... [RUN]
+[0m17:14:36.991618 [info ] [Thread-2 (]: 4 of 19 START sql table model PUBLIC_stg_northwind.stg_inventory_transaction_types  [RUN]
+[0m17:14:36.991849 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_customer, now model.ae.stg_employees)
+[0m17:14:36.992054 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_employee_privileges, now model.ae.stg_inventory_transaction_types)
+[0m17:14:36.992257 [debug] [Thread-1 (]: Began compiling node model.ae.stg_employees
+[0m17:14:36.992484 [debug] [Thread-2 (]: Began compiling node model.ae.stg_inventory_transaction_types
+[0m17:14:36.993979 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_employees"
+[0m17:14:36.995873 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_inventory_transaction_types"
+[0m17:14:36.996683 [debug] [Thread-1 (]: Began executing node model.ae.stg_employees
+[0m17:14:36.996921 [debug] [Thread-2 (]: Began executing node model.ae.stg_inventory_transaction_types
+[0m17:14:36.998302 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_employees"
+[0m17:14:36.999525 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_inventory_transaction_types"
+[0m17:14:37.000200 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_inventory_transaction_types"
+[0m17:14:37.000521 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_employees"
+[0m17:14:37.000749 [debug] [Thread-2 (]: On model.ae.stg_inventory_transaction_types: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_inventory_transaction_types"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_inventory_transaction_types
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.inventory_transaction_types
+)
+
+select * from source
+        );
+[0m17:14:37.001029 [debug] [Thread-1 (]: On model.ae.stg_employees: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_employees"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_employees
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.employees
+)
+
+select * from source
+        );
+[0m17:14:38.209154 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.208 seconds
+[0m17:14:38.211790 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12bbc1450>]}
+[0m17:14:38.212224 [info ] [Thread-2 (]: 4 of 19 OK created sql table model PUBLIC_stg_northwind.stg_inventory_transaction_types  [[32mSUCCESS 1[0m in 1.22s]
+[0m17:14:38.212513 [debug] [Thread-2 (]: Finished running node model.ae.stg_inventory_transaction_types
+[0m17:14:38.212698 [debug] [Thread-2 (]: Began running node model.ae.stg_inventory_transactions
+[0m17:14:38.212893 [info ] [Thread-2 (]: 5 of 19 START sql table model PUBLIC_stg_northwind.stg_inventory_transactions .. [RUN]
+[0m17:14:38.213087 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_inventory_transaction_types, now model.ae.stg_inventory_transactions)
+[0m17:14:38.213374 [debug] [Thread-2 (]: Began compiling node model.ae.stg_inventory_transactions
+[0m17:14:38.214732 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_inventory_transactions"
+[0m17:14:38.215158 [debug] [Thread-2 (]: Began executing node model.ae.stg_inventory_transactions
+[0m17:14:38.216231 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_inventory_transactions"
+[0m17:14:38.216692 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_inventory_transactions"
+[0m17:14:38.216860 [debug] [Thread-2 (]: On model.ae.stg_inventory_transactions: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_inventory_transactions"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_inventory_transactions
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.inventory_transactions
+)
+
+select * from source
+        );
+[0m17:14:38.263076 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.262 seconds
+[0m17:14:38.264611 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12bbb6150>]}
+[0m17:14:38.264995 [info ] [Thread-1 (]: 3 of 19 OK created sql table model PUBLIC_stg_northwind.stg_employees .......... [[32mSUCCESS 1[0m in 1.27s]
+[0m17:14:38.265270 [debug] [Thread-1 (]: Finished running node model.ae.stg_employees
+[0m17:14:38.265449 [debug] [Thread-1 (]: Began running node model.ae.stg_invoices
+[0m17:14:38.265650 [info ] [Thread-1 (]: 6 of 19 START sql table model PUBLIC_stg_northwind.stg_invoices ................ [RUN]
+[0m17:14:38.265855 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_employees, now model.ae.stg_invoices)
+[0m17:14:38.266012 [debug] [Thread-1 (]: Began compiling node model.ae.stg_invoices
+[0m17:14:38.267676 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_invoices"
+[0m17:14:38.268122 [debug] [Thread-1 (]: Began executing node model.ae.stg_invoices
+[0m17:14:38.269175 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_invoices"
+[0m17:14:38.269618 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_invoices"
+[0m17:14:38.269781 [debug] [Thread-1 (]: On model.ae.stg_invoices: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_invoices"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_invoices
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.invoices
+)
+
+select * from source
+        );
+[0m17:14:39.486790 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.270 seconds
+[0m17:14:39.488064 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.218 seconds
+[0m17:14:39.490449 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x129f19ef0>]}
+[0m17:14:39.491423 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12bbca6d0>]}
+[0m17:14:39.491759 [info ] [Thread-2 (]: 5 of 19 OK created sql table model PUBLIC_stg_northwind.stg_inventory_transactions  [[32mSUCCESS 1[0m in 1.28s]
+[0m17:14:39.492260 [info ] [Thread-1 (]: 6 of 19 OK created sql table model PUBLIC_stg_northwind.stg_invoices ........... [[32mSUCCESS 1[0m in 1.23s]
+[0m17:14:39.492696 [debug] [Thread-2 (]: Finished running node model.ae.stg_inventory_transactions
+[0m17:14:39.492968 [debug] [Thread-1 (]: Finished running node model.ae.stg_invoices
+[0m17:14:39.493165 [debug] [Thread-2 (]: Began running node model.ae.stg_order_details
+[0m17:14:39.493403 [debug] [Thread-1 (]: Began running node model.ae.stg_order_details_status
+[0m17:14:39.493660 [info ] [Thread-2 (]: 7 of 19 START sql table model PUBLIC_stg_northwind.stg_order_details ........... [RUN]
+[0m17:14:39.493985 [info ] [Thread-1 (]: 8 of 19 START sql table model PUBLIC_stg_northwind.stg_order_details_status .... [RUN]
+[0m17:14:39.494284 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_inventory_transactions, now model.ae.stg_order_details)
+[0m17:14:39.494503 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_invoices, now model.ae.stg_order_details_status)
+[0m17:14:39.494712 [debug] [Thread-2 (]: Began compiling node model.ae.stg_order_details
+[0m17:14:39.494920 [debug] [Thread-1 (]: Began compiling node model.ae.stg_order_details_status
+[0m17:14:39.500105 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_order_details"
+[0m17:14:39.501377 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_order_details_status"
+[0m17:14:39.501900 [debug] [Thread-2 (]: Began executing node model.ae.stg_order_details
+[0m17:14:39.503004 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_order_details"
+[0m17:14:39.503274 [debug] [Thread-1 (]: Began executing node model.ae.stg_order_details_status
+[0m17:14:39.504837 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_order_details_status"
+[0m17:14:39.505402 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_order_details"
+[0m17:14:39.505601 [debug] [Thread-2 (]: On model.ae.stg_order_details: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_order_details"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_order_details
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.order_details
+)
+
+select * from source
+        );
+[0m17:14:39.505944 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_order_details_status"
+[0m17:14:39.506445 [debug] [Thread-1 (]: On model.ae.stg_order_details_status: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_order_details_status"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_order_details_status
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.order_details_status
+)
+
+select * from source
+        );
+[0m17:14:40.218310 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.711 seconds
+[0m17:14:40.221290 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12a5f9370>]}
+[0m17:14:40.221763 [info ] [Thread-2 (]: 7 of 19 OK created sql table model PUBLIC_stg_northwind.stg_order_details ...... [[32mSUCCESS 1[0m in 0.73s]
+[0m17:14:40.222358 [debug] [Thread-2 (]: Finished running node model.ae.stg_order_details
+[0m17:14:40.222668 [debug] [Thread-2 (]: Began running node model.ae.stg_order_status
+[0m17:14:40.223016 [info ] [Thread-2 (]: 9 of 19 START sql table model PUBLIC_stg_northwind.stg_order_status ............ [RUN]
+[0m17:14:40.223341 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_order_details, now model.ae.stg_order_status)
+[0m17:14:40.223527 [debug] [Thread-2 (]: Began compiling node model.ae.stg_order_status
+[0m17:14:40.225039 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_order_status"
+[0m17:14:40.225601 [debug] [Thread-2 (]: Began executing node model.ae.stg_order_status
+[0m17:14:40.227423 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_order_status"
+[0m17:14:40.228095 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_order_status"
+[0m17:14:40.228289 [debug] [Thread-2 (]: On model.ae.stg_order_status: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_order_status"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_order_status
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.order_status
+)
+
+select * from source
+        );
+[0m17:14:40.347872 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.841 seconds
+[0m17:14:40.350458 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12a5fa570>]}
+[0m17:14:40.350909 [info ] [Thread-1 (]: 8 of 19 OK created sql table model PUBLIC_stg_northwind.stg_order_details_status  [[32mSUCCESS 1[0m in 0.86s]
+[0m17:14:40.351239 [debug] [Thread-1 (]: Finished running node model.ae.stg_order_details_status
+[0m17:14:40.351454 [debug] [Thread-1 (]: Began running node model.ae.stg_orders
+[0m17:14:40.351686 [info ] [Thread-1 (]: 10 of 19 START sql table model PUBLIC_stg_northwind.stg_orders ................. [RUN]
+[0m17:14:40.352006 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_order_details_status, now model.ae.stg_orders)
+[0m17:14:40.352287 [debug] [Thread-1 (]: Began compiling node model.ae.stg_orders
+[0m17:14:40.353890 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_orders"
+[0m17:14:40.354425 [debug] [Thread-1 (]: Began executing node model.ae.stg_orders
+[0m17:14:40.356016 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_orders"
+[0m17:14:40.356747 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_orders"
+[0m17:14:40.356963 [debug] [Thread-1 (]: On model.ae.stg_orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_orders"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_orders
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.orders
+)
+
+select * from source
+        );
+[0m17:14:41.117029 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.888 seconds
+[0m17:14:41.118623 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12a5fcb90>]}
+[0m17:14:41.119012 [info ] [Thread-2 (]: 9 of 19 OK created sql table model PUBLIC_stg_northwind.stg_order_status ....... [[32mSUCCESS 1[0m in 0.90s]
+[0m17:14:41.119365 [debug] [Thread-2 (]: Finished running node model.ae.stg_order_status
+[0m17:14:41.119579 [debug] [Thread-2 (]: Began running node model.ae.stg_orders_tax_status
+[0m17:14:41.119858 [info ] [Thread-2 (]: 11 of 19 START sql table model PUBLIC_stg_northwind.stg_orders_tax_status ...... [RUN]
+[0m17:14:41.120184 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_order_status, now model.ae.stg_orders_tax_status)
+[0m17:14:41.120382 [debug] [Thread-2 (]: Began compiling node model.ae.stg_orders_tax_status
+[0m17:14:41.123220 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_orders_tax_status"
+[0m17:14:41.123900 [debug] [Thread-2 (]: Began executing node model.ae.stg_orders_tax_status
+[0m17:14:41.125256 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_orders_tax_status"
+[0m17:14:41.125874 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_orders_tax_status"
+[0m17:14:41.126058 [debug] [Thread-2 (]: On model.ae.stg_orders_tax_status: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_orders_tax_status"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_orders_tax_status
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.orders_tax_status
+)
+
+select * from source
+        );
+[0m17:14:41.243975 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01b99b8a-0004-747e-0003-964b0002418e
+[0m17:14:41.244288 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 002003 (42S02): SQL compilation error:
+Object 'DL_NORTHWIND.PUBLIC.ORDERS_TAX_STATUS' does not exist or not authorized.
+[0m17:14:41.248016 [debug] [Thread-2 (]: Database Error in model stg_orders_tax_status (models/staging/stg_orders_tax_status.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'DL_NORTHWIND.PUBLIC.ORDERS_TAX_STATUS' does not exist or not authorized.
+  compiled code at target/run/ae/models/staging/stg_orders_tax_status.sql
+[0m17:14:41.248332 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12bc3a990>]}
+[0m17:14:41.248662 [error] [Thread-2 (]: 11 of 19 ERROR creating sql table model PUBLIC_stg_northwind.stg_orders_tax_status  [[31mERROR[0m in 0.13s]
+[0m17:14:41.248938 [debug] [Thread-2 (]: Finished running node model.ae.stg_orders_tax_status
+[0m17:14:41.249112 [debug] [Thread-2 (]: Began running node model.ae.stg_privileges
+[0m17:14:41.249420 [debug] [Thread-5 (]: Marking all children of 'model.ae.stg_orders_tax_status' to be skipped because of status 'error'.  Reason: Database Error in model stg_orders_tax_status (models/staging/stg_orders_tax_status.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'DL_NORTHWIND.PUBLIC.ORDERS_TAX_STATUS' does not exist or not authorized.
+  compiled code at target/run/ae/models/staging/stg_orders_tax_status.sql.
+[0m17:14:41.249765 [info ] [Thread-2 (]: 12 of 19 START sql table model PUBLIC_stg_northwind.stg_privileges ............. [RUN]
+[0m17:14:41.250494 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_orders_tax_status, now model.ae.stg_privileges)
+[0m17:14:41.250686 [debug] [Thread-2 (]: Began compiling node model.ae.stg_privileges
+[0m17:14:41.252646 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_privileges"
+[0m17:14:41.253151 [debug] [Thread-2 (]: Began executing node model.ae.stg_privileges
+[0m17:14:41.254599 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_privileges"
+[0m17:14:41.255237 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_privileges"
+[0m17:14:41.255433 [debug] [Thread-2 (]: On model.ae.stg_privileges: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_privileges"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_privileges
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.privileges
+)
+
+select * from source
+        );
+[0m17:14:41.587087 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.229 seconds
+[0m17:14:41.589885 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12a5fe1b0>]}
+[0m17:14:41.590270 [info ] [Thread-1 (]: 10 of 19 OK created sql table model PUBLIC_stg_northwind.stg_orders ............ [[32mSUCCESS 1[0m in 1.24s]
+[0m17:14:41.590538 [debug] [Thread-1 (]: Finished running node model.ae.stg_orders
+[0m17:14:41.590715 [debug] [Thread-1 (]: Began running node model.ae.stg_products
+[0m17:14:41.591064 [info ] [Thread-1 (]: 13 of 19 START sql table model PUBLIC_stg_northwind.stg_products ............... [RUN]
+[0m17:14:41.591382 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_orders, now model.ae.stg_products)
+[0m17:14:41.591558 [debug] [Thread-1 (]: Began compiling node model.ae.stg_products
+[0m17:14:41.592958 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_products"
+[0m17:14:41.593386 [debug] [Thread-1 (]: Began executing node model.ae.stg_products
+[0m17:14:41.594917 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_products"
+[0m17:14:41.595486 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_products"
+[0m17:14:41.595665 [debug] [Thread-1 (]: On model.ae.stg_products: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_products"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_products
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.products
+)
+
+select * from source
+        );
+[0m17:14:42.243167 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.987 seconds
+[0m17:14:42.245803 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12a5f8ad0>]}
+[0m17:14:42.246331 [info ] [Thread-2 (]: 12 of 19 OK created sql table model PUBLIC_stg_northwind.stg_privileges ........ [[32mSUCCESS 1[0m in 1.00s]
+[0m17:14:42.246860 [debug] [Thread-2 (]: Finished running node model.ae.stg_privileges
+[0m17:14:42.247086 [debug] [Thread-2 (]: Began running node model.ae.stg_purchase_order_details
+[0m17:14:42.247327 [info ] [Thread-2 (]: 14 of 19 START sql table model PUBLIC_stg_northwind.stg_purchase_order_details . [RUN]
+[0m17:14:42.247635 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_privileges, now model.ae.stg_purchase_order_details)
+[0m17:14:42.248038 [debug] [Thread-2 (]: Began compiling node model.ae.stg_purchase_order_details
+[0m17:14:42.249553 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_purchase_order_details"
+[0m17:14:42.250062 [debug] [Thread-2 (]: Began executing node model.ae.stg_purchase_order_details
+[0m17:14:42.251513 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_purchase_order_details"
+[0m17:14:42.252048 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_purchase_order_details"
+[0m17:14:42.252243 [debug] [Thread-2 (]: On model.ae.stg_purchase_order_details: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_purchase_order_details"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_purchase_order_details
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.purchase_order_details
+)
+
+select * from source
+        );
+[0m17:14:42.418549 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.822 seconds
+[0m17:14:42.420646 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12a5fcd70>]}
+[0m17:14:42.421074 [info ] [Thread-1 (]: 13 of 19 OK created sql table model PUBLIC_stg_northwind.stg_products .......... [[32mSUCCESS 1[0m in 0.83s]
+[0m17:14:42.421486 [debug] [Thread-1 (]: Finished running node model.ae.stg_products
+[0m17:14:42.421760 [debug] [Thread-1 (]: Began running node model.ae.stg_purchase_order_status
+[0m17:14:42.422077 [info ] [Thread-1 (]: 15 of 19 START sql table model PUBLIC_stg_northwind.stg_purchase_order_status .. [RUN]
+[0m17:14:42.422321 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_products, now model.ae.stg_purchase_order_status)
+[0m17:14:42.422485 [debug] [Thread-1 (]: Began compiling node model.ae.stg_purchase_order_status
+[0m17:14:42.423911 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_purchase_order_status"
+[0m17:14:42.424389 [debug] [Thread-1 (]: Began executing node model.ae.stg_purchase_order_status
+[0m17:14:42.425521 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_purchase_order_status"
+[0m17:14:42.426030 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_purchase_order_status"
+[0m17:14:42.426207 [debug] [Thread-1 (]: On model.ae.stg_purchase_order_status: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_purchase_order_status"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_purchase_order_status
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.purchase_order_status
+)
+
+select * from source
+        );
+[0m17:14:43.379839 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.127 seconds
+[0m17:14:43.382197 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12a5fe810>]}
+[0m17:14:43.383283 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.957 seconds
+[0m17:14:43.382779 [info ] [Thread-2 (]: 14 of 19 OK created sql table model PUBLIC_stg_northwind.stg_purchase_order_details  [[32mSUCCESS 1[0m in 1.13s]
+[0m17:14:43.384473 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12bcb61b0>]}
+[0m17:14:43.384774 [debug] [Thread-2 (]: Finished running node model.ae.stg_purchase_order_details
+[0m17:14:43.385152 [info ] [Thread-1 (]: 15 of 19 OK created sql table model PUBLIC_stg_northwind.stg_purchase_order_status  [[32mSUCCESS 1[0m in 0.96s]
+[0m17:14:43.385417 [debug] [Thread-2 (]: Began running node model.ae.stg_purchase_orders
+[0m17:14:43.385770 [debug] [Thread-1 (]: Finished running node model.ae.stg_purchase_order_status
+[0m17:14:43.386105 [info ] [Thread-2 (]: 16 of 19 START sql table model PUBLIC_stg_northwind.stg_purchase_orders ........ [RUN]
+[0m17:14:43.386358 [debug] [Thread-1 (]: Began running node model.ae.stg_shippers
+[0m17:14:43.386581 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_purchase_order_details, now model.ae.stg_purchase_orders)
+[0m17:14:43.386825 [info ] [Thread-1 (]: 17 of 19 START sql table model PUBLIC_stg_northwind.stg_shippers ............... [RUN]
+[0m17:14:43.387148 [debug] [Thread-2 (]: Began compiling node model.ae.stg_purchase_orders
+[0m17:14:43.387334 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_purchase_order_status, now model.ae.stg_shippers)
+[0m17:14:43.388975 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_purchase_orders"
+[0m17:14:43.389257 [debug] [Thread-1 (]: Began compiling node model.ae.stg_shippers
+[0m17:14:43.390780 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_shippers"
+[0m17:14:43.391323 [debug] [Thread-2 (]: Began executing node model.ae.stg_purchase_orders
+[0m17:14:43.391533 [debug] [Thread-1 (]: Began executing node model.ae.stg_shippers
+[0m17:14:43.393270 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_purchase_orders"
+[0m17:14:43.394602 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_shippers"
+[0m17:14:43.395303 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_purchase_orders"
+[0m17:14:43.395604 [debug] [Thread-2 (]: On model.ae.stg_purchase_orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_purchase_orders"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_purchase_orders
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.purchase_orders
+)
+
+select * from source
+        );
+[0m17:14:43.396022 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_shippers"
+[0m17:14:43.396540 [debug] [Thread-1 (]: On model.ae.stg_shippers: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_shippers"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_shippers
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.shippers
+)
+
+select * from source
+        );
+[0m17:14:44.130045 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.733 seconds
+[0m17:14:44.130971 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.734 seconds
+[0m17:14:44.132270 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12bcb4e30>]}
+[0m17:14:44.133170 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12bcb4bf0>]}
+[0m17:14:44.133497 [info ] [Thread-2 (]: 16 of 19 OK created sql table model PUBLIC_stg_northwind.stg_purchase_orders ... [[32mSUCCESS 1[0m in 0.75s]
+[0m17:14:44.133792 [info ] [Thread-1 (]: 17 of 19 OK created sql table model PUBLIC_stg_northwind.stg_shippers .......... [[32mSUCCESS 1[0m in 0.75s]
+[0m17:14:44.134040 [debug] [Thread-2 (]: Finished running node model.ae.stg_purchase_orders
+[0m17:14:44.134411 [debug] [Thread-1 (]: Finished running node model.ae.stg_shippers
+[0m17:14:44.134665 [debug] [Thread-2 (]: Began running node model.ae.stg_strings
+[0m17:14:44.134914 [debug] [Thread-1 (]: Began running node model.ae.stg_suppliers
+[0m17:14:44.135316 [info ] [Thread-2 (]: 18 of 19 START sql table model PUBLIC_stg_northwind.stg_strings ................ [RUN]
+[0m17:14:44.135648 [info ] [Thread-1 (]: 19 of 19 START sql table model PUBLIC_stg_northwind.stg_suppliers .............. [RUN]
+[0m17:14:44.135876 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_purchase_orders, now model.ae.stg_strings)
+[0m17:14:44.136065 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_shippers, now model.ae.stg_suppliers)
+[0m17:14:44.136248 [debug] [Thread-2 (]: Began compiling node model.ae.stg_strings
+[0m17:14:44.136473 [debug] [Thread-1 (]: Began compiling node model.ae.stg_suppliers
+[0m17:14:44.138122 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_strings"
+[0m17:14:44.140075 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_suppliers"
+[0m17:14:44.140679 [debug] [Thread-2 (]: Began executing node model.ae.stg_strings
+[0m17:14:44.141963 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_strings"
+[0m17:14:44.142154 [debug] [Thread-1 (]: Began executing node model.ae.stg_suppliers
+[0m17:14:44.143682 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_suppliers"
+[0m17:14:44.144243 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_strings"
+[0m17:14:44.144533 [debug] [Thread-2 (]: On model.ae.stg_strings: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_strings"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_strings
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.strings
+)
+
+select * from source
+        );
+[0m17:14:44.144953 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_suppliers"
+[0m17:14:44.145306 [debug] [Thread-1 (]: On model.ae.stg_suppliers: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_suppliers"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_suppliers
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.suppliers
+)
+
+select * from source
+        );
+[0m17:14:45.121006 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.975 seconds
+[0m17:14:45.123816 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12bcb5af0>]}
+[0m17:14:45.124236 [info ] [Thread-1 (]: 19 of 19 OK created sql table model PUBLIC_stg_northwind.stg_suppliers ......... [[32mSUCCESS 1[0m in 0.99s]
+[0m17:14:45.124916 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.980 seconds
+[0m17:14:45.125166 [debug] [Thread-1 (]: Finished running node model.ae.stg_suppliers
+[0m17:14:45.126165 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '0b75a36f-8731-4dd5-923c-cc21e82cfb59', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12bcb57f0>]}
+[0m17:14:45.126570 [info ] [Thread-2 (]: 18 of 19 OK created sql table model PUBLIC_stg_northwind.stg_strings ........... [[32mSUCCESS 1[0m in 0.99s]
+[0m17:14:45.126878 [debug] [Thread-2 (]: Finished running node model.ae.stg_strings
+[0m17:14:45.127921 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:14:45.128137 [debug] [MainThread]: Connection 'model.ae.stg_suppliers' was left open.
+[0m17:14:45.128283 [debug] [MainThread]: On model.ae.stg_suppliers: Close
+[0m17:14:45.278526 [debug] [MainThread]: Connection 'model.ae.stg_strings' was left open.
+[0m17:14:45.278875 [debug] [MainThread]: On model.ae.stg_strings: Close
+[0m17:14:45.424348 [info ] [MainThread]: 
+[0m17:14:45.424672 [info ] [MainThread]: Finished running 19 table models in 0 hours 0 minutes and 10.88 seconds (10.88s).
+[0m17:14:45.426159 [debug] [MainThread]: Command end result
+[0m17:14:45.445019 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/manifest.json
+[0m17:14:45.446287 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/semantic_manifest.json
+[0m17:14:45.450472 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mclain/Documents/Software Engineering/ae-dbt/target/run_results.json
+[0m17:14:45.450689 [info ] [MainThread]: 
+[0m17:14:45.450866 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m17:14:45.451002 [info ] [MainThread]: 
+[0m17:14:45.451187 [error] [MainThread]:   Database Error in model stg_orders_tax_status (models/staging/stg_orders_tax_status.sql)
+  002003 (42S02): SQL compilation error:
+  Object 'DL_NORTHWIND.PUBLIC.ORDERS_TAX_STATUS' does not exist or not authorized.
+  compiled code at target/run/ae/models/staging/stg_orders_tax_status.sql
+[0m17:14:45.451327 [info ] [MainThread]: 
+[0m17:14:45.451466 [info ] [MainThread]: Done. PASS=18 WARN=0 ERROR=1 SKIP=0 TOTAL=19
+[0m17:14:45.453275 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 12.0925665, "process_in_blocks": "0", "process_kernel_time": 0.419181, "process_mem_max_rss": "211861504", "process_out_blocks": "0", "process_user_time": 1.808961}
+[0m17:14:45.453615 [debug] [MainThread]: Command `dbt run` failed at 17:14:45.453560 after 12.09 seconds
+[0m17:14:45.453853 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1191b5eb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12bd5fa10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12bd5f9b0>]}
+[0m17:14:45.454058 [debug] [MainThread]: Flushing usage events
+[0m17:14:45.906885 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:18:28.467323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104218ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10541bd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10541bed0>]}
+
+
+============================== 17:18:28.471576 | ceae19b9-94a4-4900-a17e-10de2236ffec ==============================
+[0m17:18:28.471576 [info ] [MainThread]: Running with dbt=1.9.1
+[0m17:18:28.472121 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/mclain/Documents/Software Engineering/ae-dbt/logs', 'version_check': 'True', 'profiles_dir': '/Users/mclain/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m17:18:29.145260 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10acb6ea0>]}
+[0m17:18:29.174126 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ab8e690>]}
+[0m17:18:29.174837 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m17:18:29.239150 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m17:18:29.344676 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:18:29.345011 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:18:29.361766 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10abe9e50>]}
+[0m17:18:29.400270 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/manifest.json
+[0m17:18:29.401279 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/semantic_manifest.json
+[0m17:18:29.414903 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10529e030>]}
+[0m17:18:29.415233 [info ] [MainThread]: Found 19 models, 19 sources, 470 macros
+[0m17:18:29.415409 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118c2c910>]}
+[0m17:18:29.416832 [info ] [MainThread]: 
+[0m17:18:29.417015 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m17:18:29.417142 [info ] [MainThread]: 
+[0m17:18:29.417411 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:18:29.420068 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dl_northwind'
+[0m17:18:29.454575 [debug] [ThreadPool]: Using snowflake connection "list_dl_northwind"
+[0m17:18:29.454882 [debug] [ThreadPool]: On list_dl_northwind: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "connection_name": "list_dl_northwind"} */
+show terse schemas in database dl_northwind
+    limit 10000
+[0m17:18:29.455025 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:18:30.198030 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.743 seconds
+[0m17:18:30.201741 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dl_northwind, now list_dl_northwind_PUBLIC_stg_northwind)
+[0m17:18:30.207875 [debug] [ThreadPool]: Using snowflake connection "list_dl_northwind_PUBLIC_stg_northwind"
+[0m17:18:30.208122 [debug] [ThreadPool]: On list_dl_northwind_PUBLIC_stg_northwind: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "connection_name": "list_dl_northwind_PUBLIC_stg_northwind"} */
+show objects in dl_northwind.PUBLIC_stg_northwind limit 10000;
+[0m17:18:30.379459 [debug] [ThreadPool]: SQL status: SUCCESS 18 in 0.171 seconds
+[0m17:18:30.385972 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118c1b6c0>]}
+[0m17:18:30.387134 [debug] [Thread-1 (]: Began running node model.ae.stg_customer
+[0m17:18:30.387391 [debug] [Thread-2 (]: Began running node model.ae.stg_employee_privileges
+[0m17:18:30.387692 [info ] [Thread-1 (]: 1 of 19 START sql table model PUBLIC_stg_northwind.stg_customer ................ [RUN]
+[0m17:18:30.387983 [info ] [Thread-2 (]: 2 of 19 START sql table model PUBLIC_stg_northwind.stg_employee_privileges ..... [RUN]
+[0m17:18:30.388234 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dl_northwind_PUBLIC_stg_northwind, now model.ae.stg_customer)
+[0m17:18:30.388483 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.ae.stg_employee_privileges'
+[0m17:18:30.388669 [debug] [Thread-1 (]: Began compiling node model.ae.stg_customer
+[0m17:18:30.388830 [debug] [Thread-2 (]: Began compiling node model.ae.stg_employee_privileges
+[0m17:18:30.396296 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_customer"
+[0m17:18:30.398042 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_employee_privileges"
+[0m17:18:30.398755 [debug] [Thread-1 (]: Began executing node model.ae.stg_customer
+[0m17:18:30.399010 [debug] [Thread-2 (]: Began executing node model.ae.stg_employee_privileges
+[0m17:18:30.417439 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_customer"
+[0m17:18:30.419251 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_employee_privileges"
+[0m17:18:30.420061 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_customer"
+[0m17:18:30.420579 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_employee_privileges"
+[0m17:18:30.420839 [debug] [Thread-1 (]: On model.ae.stg_customer: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_customer"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_customer
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.customer
+)
+
+select * from source
+        );
+[0m17:18:30.421105 [debug] [Thread-2 (]: On model.ae.stg_employee_privileges: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_employee_privileges"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_employee_privileges
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.employee_privileges
+)
+
+select * from source
+        );
+[0m17:18:30.421528 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:18:31.221373 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.800 seconds
+[0m17:18:31.245132 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a15a750>]}
+[0m17:18:31.245644 [info ] [Thread-1 (]: 1 of 19 OK created sql table model PUBLIC_stg_northwind.stg_customer ........... [[32mSUCCESS 1[0m in 0.86s]
+[0m17:18:31.245957 [debug] [Thread-1 (]: Finished running node model.ae.stg_customer
+[0m17:18:31.246168 [debug] [Thread-1 (]: Began running node model.ae.stg_employees
+[0m17:18:31.246394 [info ] [Thread-1 (]: 3 of 19 START sql table model PUBLIC_stg_northwind.stg_employees ............... [RUN]
+[0m17:18:31.246622 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_customer, now model.ae.stg_employees)
+[0m17:18:31.246896 [debug] [Thread-1 (]: Began compiling node model.ae.stg_employees
+[0m17:18:31.248891 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_employees"
+[0m17:18:31.249643 [debug] [Thread-1 (]: Began executing node model.ae.stg_employees
+[0m17:18:31.252069 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_employees"
+[0m17:18:31.252733 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_employees"
+[0m17:18:31.252992 [debug] [Thread-1 (]: On model.ae.stg_employees: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_employees"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_employees
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.employees
+)
+
+select * from source
+        );
+[0m17:18:31.525324 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.103 seconds
+[0m17:18:31.528740 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a305ff0>]}
+[0m17:18:31.529244 [info ] [Thread-2 (]: 2 of 19 OK created sql table model PUBLIC_stg_northwind.stg_employee_privileges  [[32mSUCCESS 1[0m in 1.14s]
+[0m17:18:31.529607 [debug] [Thread-2 (]: Finished running node model.ae.stg_employee_privileges
+[0m17:18:31.529904 [debug] [Thread-2 (]: Began running node model.ae.stg_inventory_transaction_types
+[0m17:18:31.530304 [info ] [Thread-2 (]: 4 of 19 START sql table model PUBLIC_stg_northwind.stg_inventory_transaction_types  [RUN]
+[0m17:18:31.530633 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_employee_privileges, now model.ae.stg_inventory_transaction_types)
+[0m17:18:31.530873 [debug] [Thread-2 (]: Began compiling node model.ae.stg_inventory_transaction_types
+[0m17:18:31.532669 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_inventory_transaction_types"
+[0m17:18:31.533221 [debug] [Thread-2 (]: Began executing node model.ae.stg_inventory_transaction_types
+[0m17:18:31.535280 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_inventory_transaction_types"
+[0m17:18:31.536531 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_inventory_transaction_types"
+[0m17:18:31.536959 [debug] [Thread-2 (]: On model.ae.stg_inventory_transaction_types: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_inventory_transaction_types"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_inventory_transaction_types
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.inventory_transaction_types
+)
+
+select * from source
+        );
+[0m17:18:32.040355 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.787 seconds
+[0m17:18:32.041712 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10ac52fd0>]}
+[0m17:18:32.042078 [info ] [Thread-1 (]: 3 of 19 OK created sql table model PUBLIC_stg_northwind.stg_employees .......... [[32mSUCCESS 1[0m in 0.80s]
+[0m17:18:32.042373 [debug] [Thread-1 (]: Finished running node model.ae.stg_employees
+[0m17:18:32.042648 [debug] [Thread-1 (]: Began running node model.ae.stg_inventory_transactions
+[0m17:18:32.042983 [info ] [Thread-1 (]: 5 of 19 START sql table model PUBLIC_stg_northwind.stg_inventory_transactions .. [RUN]
+[0m17:18:32.043287 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_employees, now model.ae.stg_inventory_transactions)
+[0m17:18:32.043491 [debug] [Thread-1 (]: Began compiling node model.ae.stg_inventory_transactions
+[0m17:18:32.045173 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_inventory_transactions"
+[0m17:18:32.045742 [debug] [Thread-1 (]: Began executing node model.ae.stg_inventory_transactions
+[0m17:18:32.047291 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_inventory_transactions"
+[0m17:18:32.047965 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_inventory_transactions"
+[0m17:18:32.048171 [debug] [Thread-1 (]: On model.ae.stg_inventory_transactions: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_inventory_transactions"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_inventory_transactions
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.inventory_transactions
+)
+
+select * from source
+        );
+[0m17:18:32.133329 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.596 seconds
+[0m17:18:32.134723 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a36eb50>]}
+[0m17:18:32.135105 [info ] [Thread-2 (]: 4 of 19 OK created sql table model PUBLIC_stg_northwind.stg_inventory_transaction_types  [[32mSUCCESS 1[0m in 0.60s]
+[0m17:18:32.135550 [debug] [Thread-2 (]: Finished running node model.ae.stg_inventory_transaction_types
+[0m17:18:32.135862 [debug] [Thread-2 (]: Began running node model.ae.stg_invoices
+[0m17:18:32.136220 [info ] [Thread-2 (]: 6 of 19 START sql table model PUBLIC_stg_northwind.stg_invoices ................ [RUN]
+[0m17:18:32.136602 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_inventory_transaction_types, now model.ae.stg_invoices)
+[0m17:18:32.136828 [debug] [Thread-2 (]: Began compiling node model.ae.stg_invoices
+[0m17:18:32.139001 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_invoices"
+[0m17:18:32.139435 [debug] [Thread-2 (]: Began executing node model.ae.stg_invoices
+[0m17:18:32.140816 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_invoices"
+[0m17:18:32.141366 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_invoices"
+[0m17:18:32.141556 [debug] [Thread-2 (]: On model.ae.stg_invoices: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_invoices"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_invoices
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.invoices
+)
+
+select * from source
+        );
+[0m17:18:32.766860 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.625 seconds
+[0m17:18:32.770005 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a23ef20>]}
+[0m17:18:32.770521 [info ] [Thread-2 (]: 6 of 19 OK created sql table model PUBLIC_stg_northwind.stg_invoices ........... [[32mSUCCESS 1[0m in 0.63s]
+[0m17:18:32.770989 [debug] [Thread-2 (]: Finished running node model.ae.stg_invoices
+[0m17:18:32.771257 [debug] [Thread-2 (]: Began running node model.ae.stg_order_details
+[0m17:18:32.771554 [info ] [Thread-2 (]: 7 of 19 START sql table model PUBLIC_stg_northwind.stg_order_details ........... [RUN]
+[0m17:18:32.771811 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_invoices, now model.ae.stg_order_details)
+[0m17:18:32.772052 [debug] [Thread-2 (]: Began compiling node model.ae.stg_order_details
+[0m17:18:32.774262 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_order_details"
+[0m17:18:32.774876 [debug] [Thread-2 (]: Began executing node model.ae.stg_order_details
+[0m17:18:32.777348 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_order_details"
+[0m17:18:32.778350 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_order_details"
+[0m17:18:32.778740 [debug] [Thread-2 (]: On model.ae.stg_order_details: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_order_details"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_order_details
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.order_details
+)
+
+select * from source
+        );
+[0m17:18:32.934965 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.886 seconds
+[0m17:18:32.938113 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a2b2ed0>]}
+[0m17:18:32.938602 [info ] [Thread-1 (]: 5 of 19 OK created sql table model PUBLIC_stg_northwind.stg_inventory_transactions  [[32mSUCCESS 1[0m in 0.89s]
+[0m17:18:32.938923 [debug] [Thread-1 (]: Finished running node model.ae.stg_inventory_transactions
+[0m17:18:32.939135 [debug] [Thread-1 (]: Began running node model.ae.stg_order_details_status
+[0m17:18:32.939543 [info ] [Thread-1 (]: 8 of 19 START sql table model PUBLIC_stg_northwind.stg_order_details_status .... [RUN]
+[0m17:18:32.939959 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_inventory_transactions, now model.ae.stg_order_details_status)
+[0m17:18:32.940214 [debug] [Thread-1 (]: Began compiling node model.ae.stg_order_details_status
+[0m17:18:32.942017 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_order_details_status"
+[0m17:18:32.942562 [debug] [Thread-1 (]: Began executing node model.ae.stg_order_details_status
+[0m17:18:32.947830 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_order_details_status"
+[0m17:18:32.948609 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_order_details_status"
+[0m17:18:32.948837 [debug] [Thread-1 (]: On model.ae.stg_order_details_status: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_order_details_status"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_order_details_status
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.order_details_status
+)
+
+select * from source
+        );
+[0m17:18:33.583995 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.805 seconds
+[0m17:18:33.585260 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a2b2f30>]}
+[0m17:18:33.585563 [info ] [Thread-2 (]: 7 of 19 OK created sql table model PUBLIC_stg_northwind.stg_order_details ...... [[32mSUCCESS 1[0m in 0.81s]
+[0m17:18:33.585812 [debug] [Thread-2 (]: Finished running node model.ae.stg_order_details
+[0m17:18:33.586002 [debug] [Thread-2 (]: Began running node model.ae.stg_order_status
+[0m17:18:33.586180 [info ] [Thread-2 (]: 9 of 19 START sql table model PUBLIC_stg_northwind.stg_order_status ............ [RUN]
+[0m17:18:33.586447 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_order_details, now model.ae.stg_order_status)
+[0m17:18:33.586820 [debug] [Thread-2 (]: Began compiling node model.ae.stg_order_status
+[0m17:18:33.588474 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_order_status"
+[0m17:18:33.588918 [debug] [Thread-2 (]: Began executing node model.ae.stg_order_status
+[0m17:18:33.590552 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_order_status"
+[0m17:18:33.591107 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_order_status"
+[0m17:18:33.591281 [debug] [Thread-2 (]: On model.ae.stg_order_status: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_order_status"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_order_status
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.order_status
+)
+
+select * from source
+        );
+[0m17:18:34.088493 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.139 seconds
+[0m17:18:34.092158 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a24cbf0>]}
+[0m17:18:34.092748 [info ] [Thread-1 (]: 8 of 19 OK created sql table model PUBLIC_stg_northwind.stg_order_details_status  [[32mSUCCESS 1[0m in 1.15s]
+[0m17:18:34.093140 [debug] [Thread-1 (]: Finished running node model.ae.stg_order_details_status
+[0m17:18:34.093384 [debug] [Thread-1 (]: Began running node model.ae.stg_orders
+[0m17:18:34.093782 [info ] [Thread-1 (]: 10 of 19 START sql table model PUBLIC_stg_northwind.stg_orders ................. [RUN]
+[0m17:18:34.094266 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_order_details_status, now model.ae.stg_orders)
+[0m17:18:34.094822 [debug] [Thread-1 (]: Began compiling node model.ae.stg_orders
+[0m17:18:34.097390 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_orders"
+[0m17:18:34.098000 [debug] [Thread-1 (]: Began executing node model.ae.stg_orders
+[0m17:18:34.099305 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_orders"
+[0m17:18:34.099840 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_orders"
+[0m17:18:34.100033 [debug] [Thread-1 (]: On model.ae.stg_orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_orders"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_orders
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.orders
+)
+
+select * from source
+        );
+[0m17:18:34.759753 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.168 seconds
+[0m17:18:34.762470 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a2b2810>]}
+[0m17:18:34.762894 [info ] [Thread-2 (]: 9 of 19 OK created sql table model PUBLIC_stg_northwind.stg_order_status ....... [[32mSUCCESS 1[0m in 1.18s]
+[0m17:18:34.763333 [debug] [Thread-2 (]: Finished running node model.ae.stg_order_status
+[0m17:18:34.763652 [debug] [Thread-2 (]: Began running node model.ae.stg_orders_tax_status
+[0m17:18:34.764021 [info ] [Thread-2 (]: 11 of 19 START sql table model PUBLIC_stg_northwind.stg_orders_tax_status ...... [RUN]
+[0m17:18:34.764340 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_order_status, now model.ae.stg_orders_tax_status)
+[0m17:18:34.764533 [debug] [Thread-2 (]: Began compiling node model.ae.stg_orders_tax_status
+[0m17:18:34.766136 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_orders_tax_status"
+[0m17:18:34.766628 [debug] [Thread-2 (]: Began executing node model.ae.stg_orders_tax_status
+[0m17:18:34.767880 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_orders_tax_status"
+[0m17:18:34.768380 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_orders_tax_status"
+[0m17:18:34.768573 [debug] [Thread-2 (]: On model.ae.stg_orders_tax_status: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_orders_tax_status"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_orders_tax_status
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.orders_tax_status
+)
+
+select * from source
+        );
+[0m17:18:35.112836 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.012 seconds
+[0m17:18:35.116081 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a3dcad0>]}
+[0m17:18:35.116469 [info ] [Thread-1 (]: 10 of 19 OK created sql table model PUBLIC_stg_northwind.stg_orders ............ [[32mSUCCESS 1[0m in 1.02s]
+[0m17:18:35.116849 [debug] [Thread-1 (]: Finished running node model.ae.stg_orders
+[0m17:18:35.117042 [debug] [Thread-1 (]: Began running node model.ae.stg_privileges
+[0m17:18:35.117376 [info ] [Thread-1 (]: 12 of 19 START sql table model PUBLIC_stg_northwind.stg_privileges ............. [RUN]
+[0m17:18:35.117716 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_orders, now model.ae.stg_privileges)
+[0m17:18:35.117896 [debug] [Thread-1 (]: Began compiling node model.ae.stg_privileges
+[0m17:18:35.119775 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_privileges"
+[0m17:18:35.120624 [debug] [Thread-1 (]: Began executing node model.ae.stg_privileges
+[0m17:18:35.123528 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_privileges"
+[0m17:18:35.125152 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_privileges"
+[0m17:18:35.125416 [debug] [Thread-1 (]: On model.ae.stg_privileges: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_privileges"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_privileges
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.privileges
+)
+
+select * from source
+        );
+[0m17:18:35.701502 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.933 seconds
+[0m17:18:35.703159 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a24e390>]}
+[0m17:18:35.703667 [info ] [Thread-2 (]: 11 of 19 OK created sql table model PUBLIC_stg_northwind.stg_orders_tax_status . [[32mSUCCESS 1[0m in 0.94s]
+[0m17:18:35.704012 [debug] [Thread-2 (]: Finished running node model.ae.stg_orders_tax_status
+[0m17:18:35.704229 [debug] [Thread-2 (]: Began running node model.ae.stg_products
+[0m17:18:35.704457 [info ] [Thread-2 (]: 13 of 19 START sql table model PUBLIC_stg_northwind.stg_products ............... [RUN]
+[0m17:18:35.704745 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_orders_tax_status, now model.ae.stg_products)
+[0m17:18:35.705136 [debug] [Thread-2 (]: Began compiling node model.ae.stg_products
+[0m17:18:35.707161 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_products"
+[0m17:18:35.707686 [debug] [Thread-2 (]: Began executing node model.ae.stg_products
+[0m17:18:35.708997 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_products"
+[0m17:18:35.709484 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_products"
+[0m17:18:35.709673 [debug] [Thread-2 (]: On model.ae.stg_products: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_products"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_products
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.products
+)
+
+select * from source
+        );
+[0m17:18:35.913800 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.788 seconds
+[0m17:18:35.917018 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a2b27b0>]}
+[0m17:18:35.917492 [info ] [Thread-1 (]: 12 of 19 OK created sql table model PUBLIC_stg_northwind.stg_privileges ........ [[32mSUCCESS 1[0m in 0.80s]
+[0m17:18:35.917816 [debug] [Thread-1 (]: Finished running node model.ae.stg_privileges
+[0m17:18:35.918040 [debug] [Thread-1 (]: Began running node model.ae.stg_purchase_order_details
+[0m17:18:35.918283 [info ] [Thread-1 (]: 14 of 19 START sql table model PUBLIC_stg_northwind.stg_purchase_order_details . [RUN]
+[0m17:18:35.918572 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_privileges, now model.ae.stg_purchase_order_details)
+[0m17:18:35.918860 [debug] [Thread-1 (]: Began compiling node model.ae.stg_purchase_order_details
+[0m17:18:35.920520 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_purchase_order_details"
+[0m17:18:35.921045 [debug] [Thread-1 (]: Began executing node model.ae.stg_purchase_order_details
+[0m17:18:35.922993 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_purchase_order_details"
+[0m17:18:35.923629 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_purchase_order_details"
+[0m17:18:35.923823 [debug] [Thread-1 (]: On model.ae.stg_purchase_order_details: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_purchase_order_details"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_purchase_order_details
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.purchase_order_details
+)
+
+select * from source
+        );
+[0m17:18:36.444008 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.734 seconds
+[0m17:18:36.445565 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a3dd850>]}
+[0m17:18:36.445964 [info ] [Thread-2 (]: 13 of 19 OK created sql table model PUBLIC_stg_northwind.stg_products .......... [[32mSUCCESS 1[0m in 0.74s]
+[0m17:18:36.446275 [debug] [Thread-2 (]: Finished running node model.ae.stg_products
+[0m17:18:36.446482 [debug] [Thread-2 (]: Began running node model.ae.stg_purchase_order_status
+[0m17:18:36.446779 [info ] [Thread-2 (]: 15 of 19 START sql table model PUBLIC_stg_northwind.stg_purchase_order_status .. [RUN]
+[0m17:18:36.447067 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_products, now model.ae.stg_purchase_order_status)
+[0m17:18:36.447263 [debug] [Thread-2 (]: Began compiling node model.ae.stg_purchase_order_status
+[0m17:18:36.448823 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_purchase_order_status"
+[0m17:18:36.449333 [debug] [Thread-2 (]: Began executing node model.ae.stg_purchase_order_status
+[0m17:18:36.450831 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_purchase_order_status"
+[0m17:18:36.451312 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_purchase_order_status"
+[0m17:18:36.451499 [debug] [Thread-2 (]: On model.ae.stg_purchase_order_status: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_purchase_order_status"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_purchase_order_status
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.purchase_order_status
+)
+
+select * from source
+        );
+[0m17:18:36.592883 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.668 seconds
+[0m17:18:36.596500 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a3dcb30>]}
+[0m17:18:36.597218 [info ] [Thread-1 (]: 14 of 19 OK created sql table model PUBLIC_stg_northwind.stg_purchase_order_details  [[32mSUCCESS 1[0m in 0.68s]
+[0m17:18:36.597552 [debug] [Thread-1 (]: Finished running node model.ae.stg_purchase_order_details
+[0m17:18:36.597759 [debug] [Thread-1 (]: Began running node model.ae.stg_purchase_orders
+[0m17:18:36.597983 [info ] [Thread-1 (]: 16 of 19 START sql table model PUBLIC_stg_northwind.stg_purchase_orders ........ [RUN]
+[0m17:18:36.598313 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_purchase_order_details, now model.ae.stg_purchase_orders)
+[0m17:18:36.598698 [debug] [Thread-1 (]: Began compiling node model.ae.stg_purchase_orders
+[0m17:18:36.600409 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_purchase_orders"
+[0m17:18:36.600930 [debug] [Thread-1 (]: Began executing node model.ae.stg_purchase_orders
+[0m17:18:36.602263 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_purchase_orders"
+[0m17:18:36.602764 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_purchase_orders"
+[0m17:18:36.602956 [debug] [Thread-1 (]: On model.ae.stg_purchase_orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_purchase_orders"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_purchase_orders
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.purchase_orders
+)
+
+select * from source
+        );
+[0m17:18:37.340297 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.888 seconds
+[0m17:18:37.344608 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a2b2e70>]}
+[0m17:18:37.345089 [info ] [Thread-2 (]: 15 of 19 OK created sql table model PUBLIC_stg_northwind.stg_purchase_order_status  [[32mSUCCESS 1[0m in 0.90s]
+[0m17:18:37.345415 [debug] [Thread-2 (]: Finished running node model.ae.stg_purchase_order_status
+[0m17:18:37.345627 [debug] [Thread-2 (]: Began running node model.ae.stg_shippers
+[0m17:18:37.345854 [info ] [Thread-2 (]: 17 of 19 START sql table model PUBLIC_stg_northwind.stg_shippers ............... [RUN]
+[0m17:18:37.346135 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_purchase_order_status, now model.ae.stg_shippers)
+[0m17:18:37.346377 [debug] [Thread-2 (]: Began compiling node model.ae.stg_shippers
+[0m17:18:37.349813 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_shippers"
+[0m17:18:37.350730 [debug] [Thread-2 (]: Began executing node model.ae.stg_shippers
+[0m17:18:37.353357 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_shippers"
+[0m17:18:37.354342 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_shippers"
+[0m17:18:37.354743 [debug] [Thread-2 (]: On model.ae.stg_shippers: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_shippers"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_shippers
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.shippers
+)
+
+select * from source
+        );
+[0m17:18:37.446410 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.843 seconds
+[0m17:18:37.447993 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a3df530>]}
+[0m17:18:37.448447 [info ] [Thread-1 (]: 16 of 19 OK created sql table model PUBLIC_stg_northwind.stg_purchase_orders ... [[32mSUCCESS 1[0m in 0.85s]
+[0m17:18:37.448774 [debug] [Thread-1 (]: Finished running node model.ae.stg_purchase_orders
+[0m17:18:37.448972 [debug] [Thread-1 (]: Began running node model.ae.stg_strings
+[0m17:18:37.449246 [info ] [Thread-1 (]: 18 of 19 START sql table model PUBLIC_stg_northwind.stg_strings ................ [RUN]
+[0m17:18:37.449519 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_purchase_orders, now model.ae.stg_strings)
+[0m17:18:37.449707 [debug] [Thread-1 (]: Began compiling node model.ae.stg_strings
+[0m17:18:37.451577 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_strings"
+[0m17:18:37.452079 [debug] [Thread-1 (]: Began executing node model.ae.stg_strings
+[0m17:18:37.453457 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_strings"
+[0m17:18:37.454083 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_strings"
+[0m17:18:37.454279 [debug] [Thread-1 (]: On model.ae.stg_strings: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_strings"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_strings
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.strings
+)
+
+select * from source
+        );
+[0m17:18:38.287957 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.833 seconds
+[0m17:18:38.290866 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a3df710>]}
+[0m17:18:38.291287 [info ] [Thread-1 (]: 18 of 19 OK created sql table model PUBLIC_stg_northwind.stg_strings ........... [[32mSUCCESS 1[0m in 0.84s]
+[0m17:18:38.291618 [debug] [Thread-1 (]: Finished running node model.ae.stg_strings
+[0m17:18:38.291929 [debug] [Thread-1 (]: Began running node model.ae.stg_suppliers
+[0m17:18:38.292239 [info ] [Thread-1 (]: 19 of 19 START sql table model PUBLIC_stg_northwind.stg_suppliers .............. [RUN]
+[0m17:18:38.292542 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_strings, now model.ae.stg_suppliers)
+[0m17:18:38.292738 [debug] [Thread-1 (]: Began compiling node model.ae.stg_suppliers
+[0m17:18:38.294771 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_suppliers"
+[0m17:18:38.295727 [debug] [Thread-1 (]: Began executing node model.ae.stg_suppliers
+[0m17:18:38.298150 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_suppliers"
+[0m17:18:38.298712 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_suppliers"
+[0m17:18:38.298942 [debug] [Thread-1 (]: On model.ae.stg_suppliers: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_suppliers"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_suppliers
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.suppliers
+)
+
+select * from source
+        );
+[0m17:18:38.311498 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.956 seconds
+[0m17:18:38.312973 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a3dde50>]}
+[0m17:18:38.313496 [info ] [Thread-2 (]: 17 of 19 OK created sql table model PUBLIC_stg_northwind.stg_shippers .......... [[32mSUCCESS 1[0m in 0.97s]
+[0m17:18:38.314002 [debug] [Thread-2 (]: Finished running node model.ae.stg_shippers
+[0m17:18:39.106739 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.807 seconds
+[0m17:18:39.110840 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'ceae19b9-94a4-4900-a17e-10de2236ffec', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a3de510>]}
+[0m17:18:39.111275 [info ] [Thread-1 (]: 19 of 19 OK created sql table model PUBLIC_stg_northwind.stg_suppliers ......... [[32mSUCCESS 1[0m in 0.82s]
+[0m17:18:39.111539 [debug] [Thread-1 (]: Finished running node model.ae.stg_suppliers
+[0m17:18:39.112427 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:18:39.112685 [debug] [MainThread]: Connection 'model.ae.stg_suppliers' was left open.
+[0m17:18:39.112848 [debug] [MainThread]: On model.ae.stg_suppliers: Close
+[0m17:18:39.235902 [debug] [MainThread]: Connection 'model.ae.stg_shippers' was left open.
+[0m17:18:39.236381 [debug] [MainThread]: On model.ae.stg_shippers: Close
+[0m17:18:39.379767 [info ] [MainThread]: 
+[0m17:18:39.380055 [info ] [MainThread]: Finished running 19 table models in 0 hours 0 minutes and 9.96 seconds (9.96s).
+[0m17:18:39.381655 [debug] [MainThread]: Command end result
+[0m17:18:39.398870 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/manifest.json
+[0m17:18:39.399872 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/semantic_manifest.json
+[0m17:18:39.403260 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mclain/Documents/Software Engineering/ae-dbt/target/run_results.json
+[0m17:18:39.403441 [info ] [MainThread]: 
+[0m17:18:39.403623 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:18:39.403756 [info ] [MainThread]: 
+[0m17:18:39.403895 [info ] [MainThread]: Done. PASS=19 WARN=0 ERROR=0 SKIP=0 TOTAL=19
+[0m17:18:39.405613 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 10.983991, "process_in_blocks": "0", "process_kernel_time": 0.38352, "process_mem_max_rss": "205586432", "process_out_blocks": "0", "process_user_time": 1.634715}
+[0m17:18:39.406102 [debug] [MainThread]: Command `dbt run` succeeded at 17:18:39.406032 after 10.98 seconds
+[0m17:18:39.406313 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104ea0c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a565070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11a567f50>]}
+[0m17:18:39.406547 [debug] [MainThread]: Flushing usage events
+[0m17:18:39.865045 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:18:52.106580 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104b18ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10601bd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10601bed0>]}
+
+
+============================== 17:18:52.109722 | b567759e-f400-42e6-a0a2-1b82dbea6c3c ==============================
+[0m17:18:52.109722 [info ] [MainThread]: Running with dbt=1.9.1
+[0m17:18:52.110031 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/mclain/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/mclain/Documents/Software Engineering/ae-dbt/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'invocation_command': 'dbt run --full-refresh', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'True'}
+[0m17:18:52.559893 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113daeea0>]}
+[0m17:18:52.588271 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113c8a690>]}
+[0m17:18:52.588865 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m17:18:52.652632 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m17:18:52.711451 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:18:52.711715 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:18:52.729229 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113ce9e50>]}
+[0m17:18:52.769341 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/manifest.json
+[0m17:18:52.770704 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/semantic_manifest.json
+[0m17:18:52.779387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105e9e030>]}
+[0m17:18:52.779656 [info ] [MainThread]: Found 19 models, 19 sources, 470 macros
+[0m17:18:52.779823 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114330910>]}
+[0m17:18:52.781234 [info ] [MainThread]: 
+[0m17:18:52.781559 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m17:18:52.781726 [info ] [MainThread]: 
+[0m17:18:52.782015 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m17:18:52.784822 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dl_northwind'
+[0m17:18:52.815341 [debug] [ThreadPool]: Using snowflake connection "list_dl_northwind"
+[0m17:18:52.815723 [debug] [ThreadPool]: On list_dl_northwind: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "connection_name": "list_dl_northwind"} */
+show terse schemas in database dl_northwind
+    limit 10000
+[0m17:18:52.815881 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:18:53.579199 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.763 seconds
+[0m17:18:53.582740 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dl_northwind, now list_dl_northwind_PUBLIC_stg_northwind)
+[0m17:18:53.588980 [debug] [ThreadPool]: Using snowflake connection "list_dl_northwind_PUBLIC_stg_northwind"
+[0m17:18:53.589463 [debug] [ThreadPool]: On list_dl_northwind_PUBLIC_stg_northwind: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "connection_name": "list_dl_northwind_PUBLIC_stg_northwind"} */
+show objects in dl_northwind.PUBLIC_stg_northwind limit 10000;
+[0m17:18:53.793658 [debug] [ThreadPool]: SQL status: SUCCESS 19 in 0.204 seconds
+[0m17:18:53.798182 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11431f6c0>]}
+[0m17:18:53.799322 [debug] [Thread-2 (]: Began running node model.ae.stg_employee_privileges
+[0m17:18:53.799603 [debug] [Thread-1 (]: Began running node model.ae.stg_customer
+[0m17:18:53.799965 [info ] [Thread-2 (]: 2 of 19 START sql table model PUBLIC_stg_northwind.stg_employee_privileges ..... [RUN]
+[0m17:18:53.800338 [info ] [Thread-1 (]: 1 of 19 START sql table model PUBLIC_stg_northwind.stg_customer ................ [RUN]
+[0m17:18:53.800705 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.ae.stg_employee_privileges'
+[0m17:18:53.800942 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dl_northwind_PUBLIC_stg_northwind, now model.ae.stg_customer)
+[0m17:18:53.801161 [debug] [Thread-2 (]: Began compiling node model.ae.stg_employee_privileges
+[0m17:18:53.801323 [debug] [Thread-1 (]: Began compiling node model.ae.stg_customer
+[0m17:18:53.805691 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_employee_privileges"
+[0m17:18:53.807020 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_customer"
+[0m17:18:53.807599 [debug] [Thread-2 (]: Began executing node model.ae.stg_employee_privileges
+[0m17:18:53.807878 [debug] [Thread-1 (]: Began executing node model.ae.stg_customer
+[0m17:18:53.827778 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_customer"
+[0m17:18:53.828112 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_employee_privileges"
+[0m17:18:53.828834 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_employee_privileges"
+[0m17:18:53.829079 [debug] [Thread-2 (]: On model.ae.stg_employee_privileges: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_employee_privileges"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_employee_privileges
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.employee_privileges
+)
+
+select * from source
+        );
+[0m17:18:53.829263 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m17:18:53.829592 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_customer"
+[0m17:18:53.829954 [debug] [Thread-1 (]: On model.ae.stg_customer: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_customer"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_customer
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.customer
+)
+
+select * from source
+        );
+[0m17:18:55.842073 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 2.011 seconds
+[0m17:18:55.849761 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 2.020 seconds
+[0m17:18:55.862762 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117d5b410>]}
+[0m17:18:55.863041 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1300064c0>]}
+[0m17:18:55.863550 [info ] [Thread-2 (]: 2 of 19 OK created sql table model PUBLIC_stg_northwind.stg_employee_privileges  [[32mSUCCESS 1[0m in 2.06s]
+[0m17:18:55.864172 [info ] [Thread-1 (]: 1 of 19 OK created sql table model PUBLIC_stg_northwind.stg_customer ........... [[32mSUCCESS 1[0m in 2.06s]
+[0m17:18:55.864642 [debug] [Thread-2 (]: Finished running node model.ae.stg_employee_privileges
+[0m17:18:55.864972 [debug] [Thread-1 (]: Finished running node model.ae.stg_customer
+[0m17:18:55.865202 [debug] [Thread-2 (]: Began running node model.ae.stg_employees
+[0m17:18:55.865526 [debug] [Thread-1 (]: Began running node model.ae.stg_inventory_transaction_types
+[0m17:18:55.865891 [info ] [Thread-2 (]: 3 of 19 START sql table model PUBLIC_stg_northwind.stg_employees ............... [RUN]
+[0m17:18:55.866168 [info ] [Thread-1 (]: 4 of 19 START sql table model PUBLIC_stg_northwind.stg_inventory_transaction_types  [RUN]
+[0m17:18:55.866435 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_employee_privileges, now model.ae.stg_employees)
+[0m17:18:55.866624 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_customer, now model.ae.stg_inventory_transaction_types)
+[0m17:18:55.866821 [debug] [Thread-2 (]: Began compiling node model.ae.stg_employees
+[0m17:18:55.866990 [debug] [Thread-1 (]: Began compiling node model.ae.stg_inventory_transaction_types
+[0m17:18:55.868604 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_employees"
+[0m17:18:55.870623 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_inventory_transaction_types"
+[0m17:18:55.871178 [debug] [Thread-2 (]: Began executing node model.ae.stg_employees
+[0m17:18:55.872704 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_employees"
+[0m17:18:55.873010 [debug] [Thread-1 (]: Began executing node model.ae.stg_inventory_transaction_types
+[0m17:18:55.874649 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_inventory_transaction_types"
+[0m17:18:55.875318 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_inventory_transaction_types"
+[0m17:18:55.875703 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_employees"
+[0m17:18:55.875927 [debug] [Thread-1 (]: On model.ae.stg_inventory_transaction_types: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_inventory_transaction_types"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_inventory_transaction_types
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.inventory_transaction_types
+)
+
+select * from source
+        );
+[0m17:18:55.876195 [debug] [Thread-2 (]: On model.ae.stg_employees: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_employees"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_employees
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.employees
+)
+
+select * from source
+        );
+[0m17:18:56.808074 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.931 seconds
+[0m17:18:56.810541 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117fc23f0>]}
+[0m17:18:56.810989 [info ] [Thread-2 (]: 3 of 19 OK created sql table model PUBLIC_stg_northwind.stg_employees .......... [[32mSUCCESS 1[0m in 0.94s]
+[0m17:18:56.811306 [debug] [Thread-2 (]: Finished running node model.ae.stg_employees
+[0m17:18:56.811536 [debug] [Thread-2 (]: Began running node model.ae.stg_inventory_transactions
+[0m17:18:56.811820 [info ] [Thread-2 (]: 5 of 19 START sql table model PUBLIC_stg_northwind.stg_inventory_transactions .. [RUN]
+[0m17:18:56.812117 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_employees, now model.ae.stg_inventory_transactions)
+[0m17:18:56.812322 [debug] [Thread-2 (]: Began compiling node model.ae.stg_inventory_transactions
+[0m17:18:56.813902 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_inventory_transactions"
+[0m17:18:56.814651 [debug] [Thread-2 (]: Began executing node model.ae.stg_inventory_transactions
+[0m17:18:56.816208 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_inventory_transactions"
+[0m17:18:56.816876 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_inventory_transactions"
+[0m17:18:56.817071 [debug] [Thread-2 (]: On model.ae.stg_inventory_transactions: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_inventory_transactions"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_inventory_transactions
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.inventory_transactions
+)
+
+select * from source
+        );
+[0m17:18:56.819038 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.943 seconds
+[0m17:18:56.820810 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117f07450>]}
+[0m17:18:56.821265 [info ] [Thread-1 (]: 4 of 19 OK created sql table model PUBLIC_stg_northwind.stg_inventory_transaction_types  [[32mSUCCESS 1[0m in 0.95s]
+[0m17:18:56.821575 [debug] [Thread-1 (]: Finished running node model.ae.stg_inventory_transaction_types
+[0m17:18:56.821820 [debug] [Thread-1 (]: Began running node model.ae.stg_invoices
+[0m17:18:56.822149 [info ] [Thread-1 (]: 6 of 19 START sql table model PUBLIC_stg_northwind.stg_invoices ................ [RUN]
+[0m17:18:56.822363 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_inventory_transaction_types, now model.ae.stg_invoices)
+[0m17:18:56.822523 [debug] [Thread-1 (]: Began compiling node model.ae.stg_invoices
+[0m17:18:56.823879 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_invoices"
+[0m17:18:56.824242 [debug] [Thread-1 (]: Began executing node model.ae.stg_invoices
+[0m17:18:56.825413 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_invoices"
+[0m17:18:56.825835 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_invoices"
+[0m17:18:56.825997 [debug] [Thread-1 (]: On model.ae.stg_invoices: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_invoices"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_invoices
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.invoices
+)
+
+select * from source
+        );
+[0m17:18:58.331753 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.514 seconds
+[0m17:18:58.332840 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.507 seconds
+[0m17:18:58.335394 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117f3ef20>]}
+[0m17:18:58.336737 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117f83d20>]}
+[0m17:18:58.337187 [info ] [Thread-2 (]: 5 of 19 OK created sql table model PUBLIC_stg_northwind.stg_inventory_transactions  [[32mSUCCESS 1[0m in 1.52s]
+[0m17:18:58.337545 [info ] [Thread-1 (]: 6 of 19 OK created sql table model PUBLIC_stg_northwind.stg_invoices ........... [[32mSUCCESS 1[0m in 1.51s]
+[0m17:18:58.337890 [debug] [Thread-2 (]: Finished running node model.ae.stg_inventory_transactions
+[0m17:18:58.338184 [debug] [Thread-1 (]: Finished running node model.ae.stg_invoices
+[0m17:18:58.338380 [debug] [Thread-2 (]: Began running node model.ae.stg_order_details
+[0m17:18:58.338550 [debug] [Thread-1 (]: Began running node model.ae.stg_order_details_status
+[0m17:18:58.338790 [info ] [Thread-2 (]: 7 of 19 START sql table model PUBLIC_stg_northwind.stg_order_details ........... [RUN]
+[0m17:18:58.339278 [info ] [Thread-1 (]: 8 of 19 START sql table model PUBLIC_stg_northwind.stg_order_details_status .... [RUN]
+[0m17:18:58.339831 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_inventory_transactions, now model.ae.stg_order_details)
+[0m17:18:58.340127 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_invoices, now model.ae.stg_order_details_status)
+[0m17:18:58.340324 [debug] [Thread-2 (]: Began compiling node model.ae.stg_order_details
+[0m17:18:58.340499 [debug] [Thread-1 (]: Began compiling node model.ae.stg_order_details_status
+[0m17:18:58.342265 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_order_details"
+[0m17:18:58.343497 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_order_details_status"
+[0m17:18:58.343999 [debug] [Thread-2 (]: Began executing node model.ae.stg_order_details
+[0m17:18:58.344198 [debug] [Thread-1 (]: Began executing node model.ae.stg_order_details_status
+[0m17:18:58.345556 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_order_details"
+[0m17:18:58.349483 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_order_details_status"
+[0m17:18:58.350431 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_order_details"
+[0m17:18:58.350717 [debug] [Thread-2 (]: On model.ae.stg_order_details: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_order_details"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_order_details
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.order_details
+)
+
+select * from source
+        );
+[0m17:18:58.351138 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_order_details_status"
+[0m17:18:58.351671 [debug] [Thread-1 (]: On model.ae.stg_order_details_status: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_order_details_status"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_order_details_status
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.order_details_status
+)
+
+select * from source
+        );
+[0m17:18:59.368756 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.016 seconds
+[0m17:18:59.372002 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117fb2210>]}
+[0m17:18:59.372504 [info ] [Thread-1 (]: 8 of 19 OK created sql table model PUBLIC_stg_northwind.stg_order_details_status  [[32mSUCCESS 1[0m in 1.03s]
+[0m17:18:59.372944 [debug] [Thread-1 (]: Finished running node model.ae.stg_order_details_status
+[0m17:18:59.373153 [debug] [Thread-1 (]: Began running node model.ae.stg_order_status
+[0m17:18:59.373547 [info ] [Thread-1 (]: 9 of 19 START sql table model PUBLIC_stg_northwind.stg_order_status ............ [RUN]
+[0m17:18:59.373857 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_order_details_status, now model.ae.stg_order_status)
+[0m17:18:59.374030 [debug] [Thread-1 (]: Began compiling node model.ae.stg_order_status
+[0m17:18:59.375491 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_order_status"
+[0m17:18:59.375972 [debug] [Thread-1 (]: Began executing node model.ae.stg_order_status
+[0m17:18:59.377576 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_order_status"
+[0m17:18:59.378435 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_order_status"
+[0m17:18:59.378896 [debug] [Thread-1 (]: On model.ae.stg_order_status: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_order_status"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_order_status
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.order_status
+)
+
+select * from source
+        );
+[0m17:18:59.480718 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.128 seconds
+[0m17:18:59.483736 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117fb0b30>]}
+[0m17:18:59.484218 [info ] [Thread-2 (]: 7 of 19 OK created sql table model PUBLIC_stg_northwind.stg_order_details ...... [[32mSUCCESS 1[0m in 1.14s]
+[0m17:18:59.484589 [debug] [Thread-2 (]: Finished running node model.ae.stg_order_details
+[0m17:18:59.484840 [debug] [Thread-2 (]: Began running node model.ae.stg_orders
+[0m17:18:59.485124 [info ] [Thread-2 (]: 10 of 19 START sql table model PUBLIC_stg_northwind.stg_orders ................. [RUN]
+[0m17:18:59.485379 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_order_details, now model.ae.stg_orders)
+[0m17:18:59.485559 [debug] [Thread-2 (]: Began compiling node model.ae.stg_orders
+[0m17:18:59.487224 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_orders"
+[0m17:18:59.487876 [debug] [Thread-2 (]: Began executing node model.ae.stg_orders
+[0m17:18:59.490011 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_orders"
+[0m17:18:59.490647 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_orders"
+[0m17:18:59.490842 [debug] [Thread-2 (]: On model.ae.stg_orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_orders"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_orders
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.orders
+)
+
+select * from source
+        );
+[0m17:19:01.040549 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.661 seconds
+[0m17:19:01.042203 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117fb02f0>]}
+[0m17:19:01.042560 [info ] [Thread-1 (]: 9 of 19 OK created sql table model PUBLIC_stg_northwind.stg_order_status ....... [[32mSUCCESS 1[0m in 1.67s]
+[0m17:19:01.042947 [debug] [Thread-1 (]: Finished running node model.ae.stg_order_status
+[0m17:19:01.043201 [debug] [Thread-1 (]: Began running node model.ae.stg_orders_tax_status
+[0m17:19:01.043460 [info ] [Thread-1 (]: 11 of 19 START sql table model PUBLIC_stg_northwind.stg_orders_tax_status ...... [RUN]
+[0m17:19:01.043984 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.553 seconds
+[0m17:19:01.044276 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_order_status, now model.ae.stg_orders_tax_status)
+[0m17:19:01.046544 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x130050230>]}
+[0m17:19:01.046864 [debug] [Thread-1 (]: Began compiling node model.ae.stg_orders_tax_status
+[0m17:19:01.047314 [info ] [Thread-2 (]: 10 of 19 OK created sql table model PUBLIC_stg_northwind.stg_orders ............ [[32mSUCCESS 1[0m in 1.56s]
+[0m17:19:01.048796 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_orders_tax_status"
+[0m17:19:01.049197 [debug] [Thread-2 (]: Finished running node model.ae.stg_orders
+[0m17:19:01.049513 [debug] [Thread-2 (]: Began running node model.ae.stg_privileges
+[0m17:19:01.049828 [info ] [Thread-2 (]: 12 of 19 START sql table model PUBLIC_stg_northwind.stg_privileges ............. [RUN]
+[0m17:19:01.050071 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_orders, now model.ae.stg_privileges)
+[0m17:19:01.050297 [debug] [Thread-2 (]: Began compiling node model.ae.stg_privileges
+[0m17:19:01.051912 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_privileges"
+[0m17:19:01.052274 [debug] [Thread-1 (]: Began executing node model.ae.stg_orders_tax_status
+[0m17:19:01.054244 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_orders_tax_status"
+[0m17:19:01.054633 [debug] [Thread-2 (]: Began executing node model.ae.stg_privileges
+[0m17:19:01.058285 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_privileges"
+[0m17:19:01.059865 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_orders_tax_status"
+[0m17:19:01.060208 [debug] [Thread-1 (]: On model.ae.stg_orders_tax_status: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_orders_tax_status"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_orders_tax_status
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.orders_tax_status
+)
+
+select * from source
+        );
+[0m17:19:01.067359 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_privileges"
+[0m17:19:01.067862 [debug] [Thread-2 (]: On model.ae.stg_privileges: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_privileges"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_privileges
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.privileges
+)
+
+select * from source
+        );
+[0m17:19:02.303530 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.235 seconds
+[0m17:19:02.304006 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.244 seconds
+[0m17:19:02.305247 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117f488f0>]}
+[0m17:19:02.306655 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117fb0bf0>]}
+[0m17:19:02.307031 [info ] [Thread-2 (]: 12 of 19 OK created sql table model PUBLIC_stg_northwind.stg_privileges ........ [[32mSUCCESS 1[0m in 1.26s]
+[0m17:19:02.307499 [info ] [Thread-1 (]: 11 of 19 OK created sql table model PUBLIC_stg_northwind.stg_orders_tax_status . [[32mSUCCESS 1[0m in 1.26s]
+[0m17:19:02.307839 [debug] [Thread-2 (]: Finished running node model.ae.stg_privileges
+[0m17:19:02.308056 [debug] [Thread-1 (]: Finished running node model.ae.stg_orders_tax_status
+[0m17:19:02.308231 [debug] [Thread-2 (]: Began running node model.ae.stg_products
+[0m17:19:02.308461 [debug] [Thread-1 (]: Began running node model.ae.stg_purchase_order_details
+[0m17:19:02.308729 [info ] [Thread-2 (]: 13 of 19 START sql table model PUBLIC_stg_northwind.stg_products ............... [RUN]
+[0m17:19:02.309116 [info ] [Thread-1 (]: 14 of 19 START sql table model PUBLIC_stg_northwind.stg_purchase_order_details . [RUN]
+[0m17:19:02.309400 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_privileges, now model.ae.stg_products)
+[0m17:19:02.309592 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_orders_tax_status, now model.ae.stg_purchase_order_details)
+[0m17:19:02.309759 [debug] [Thread-2 (]: Began compiling node model.ae.stg_products
+[0m17:19:02.309909 [debug] [Thread-1 (]: Began compiling node model.ae.stg_purchase_order_details
+[0m17:19:02.311582 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_products"
+[0m17:19:02.312655 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_purchase_order_details"
+[0m17:19:02.313100 [debug] [Thread-2 (]: Began executing node model.ae.stg_products
+[0m17:19:02.314258 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_products"
+[0m17:19:02.314513 [debug] [Thread-1 (]: Began executing node model.ae.stg_purchase_order_details
+[0m17:19:02.316266 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_purchase_order_details"
+[0m17:19:02.316906 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_purchase_order_details"
+[0m17:19:02.317162 [debug] [Thread-1 (]: On model.ae.stg_purchase_order_details: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_purchase_order_details"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_purchase_order_details
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.purchase_order_details
+)
+
+select * from source
+        );
+[0m17:19:02.317705 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_products"
+[0m17:19:02.317951 [debug] [Thread-2 (]: On model.ae.stg_products: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_products"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_products
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.products
+)
+
+select * from source
+        );
+[0m17:19:03.299240 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.981 seconds
+[0m17:19:03.299781 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.982 seconds
+[0m17:19:03.300946 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117fb1d90>]}
+[0m17:19:03.301859 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117f492b0>]}
+[0m17:19:03.302195 [info ] [Thread-2 (]: 13 of 19 OK created sql table model PUBLIC_stg_northwind.stg_products .......... [[32mSUCCESS 1[0m in 0.99s]
+[0m17:19:03.302669 [info ] [Thread-1 (]: 14 of 19 OK created sql table model PUBLIC_stg_northwind.stg_purchase_order_details  [[32mSUCCESS 1[0m in 0.99s]
+[0m17:19:03.303028 [debug] [Thread-2 (]: Finished running node model.ae.stg_products
+[0m17:19:03.303269 [debug] [Thread-1 (]: Finished running node model.ae.stg_purchase_order_details
+[0m17:19:03.303454 [debug] [Thread-2 (]: Began running node model.ae.stg_purchase_order_status
+[0m17:19:03.303615 [debug] [Thread-1 (]: Began running node model.ae.stg_purchase_orders
+[0m17:19:03.303841 [info ] [Thread-2 (]: 15 of 19 START sql table model PUBLIC_stg_northwind.stg_purchase_order_status .. [RUN]
+[0m17:19:03.304174 [info ] [Thread-1 (]: 16 of 19 START sql table model PUBLIC_stg_northwind.stg_purchase_orders ........ [RUN]
+[0m17:19:03.304513 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_products, now model.ae.stg_purchase_order_status)
+[0m17:19:03.304790 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_purchase_order_details, now model.ae.stg_purchase_orders)
+[0m17:19:03.305050 [debug] [Thread-2 (]: Began compiling node model.ae.stg_purchase_order_status
+[0m17:19:03.305229 [debug] [Thread-1 (]: Began compiling node model.ae.stg_purchase_orders
+[0m17:19:03.306892 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_purchase_order_status"
+[0m17:19:03.308443 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_purchase_orders"
+[0m17:19:03.309106 [debug] [Thread-2 (]: Began executing node model.ae.stg_purchase_order_status
+[0m17:19:03.310544 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_purchase_order_status"
+[0m17:19:03.310849 [debug] [Thread-1 (]: Began executing node model.ae.stg_purchase_orders
+[0m17:19:03.312135 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_purchase_orders"
+[0m17:19:03.312760 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_purchase_order_status"
+[0m17:19:03.312971 [debug] [Thread-2 (]: On model.ae.stg_purchase_order_status: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_purchase_order_status"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_purchase_order_status
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.purchase_order_status
+)
+
+select * from source
+        );
+[0m17:19:03.313297 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_purchase_orders"
+[0m17:19:03.313817 [debug] [Thread-1 (]: On model.ae.stg_purchase_orders: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_purchase_orders"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_purchase_orders
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.purchase_orders
+)
+
+select * from source
+        );
+[0m17:19:04.708634 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 1.394 seconds
+[0m17:19:04.712393 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1300505f0>]}
+[0m17:19:04.712945 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 1.399 seconds
+[0m17:19:04.713409 [info ] [Thread-1 (]: 16 of 19 OK created sql table model PUBLIC_stg_northwind.stg_purchase_orders ... [[32mSUCCESS 1[0m in 1.41s]
+[0m17:19:04.715033 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117f4a210>]}
+[0m17:19:04.715413 [debug] [Thread-1 (]: Finished running node model.ae.stg_purchase_orders
+[0m17:19:04.715758 [info ] [Thread-2 (]: 15 of 19 OK created sql table model PUBLIC_stg_northwind.stg_purchase_order_status  [[32mSUCCESS 1[0m in 1.41s]
+[0m17:19:04.715993 [debug] [Thread-1 (]: Began running node model.ae.stg_shippers
+[0m17:19:04.716286 [debug] [Thread-2 (]: Finished running node model.ae.stg_purchase_order_status
+[0m17:19:04.716526 [info ] [Thread-1 (]: 17 of 19 START sql table model PUBLIC_stg_northwind.stg_shippers ............... [RUN]
+[0m17:19:04.716737 [debug] [Thread-2 (]: Began running node model.ae.stg_strings
+[0m17:19:04.716962 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.ae.stg_purchase_orders, now model.ae.stg_shippers)
+[0m17:19:04.717191 [info ] [Thread-2 (]: 18 of 19 START sql table model PUBLIC_stg_northwind.stg_strings ................ [RUN]
+[0m17:19:04.717371 [debug] [Thread-1 (]: Began compiling node model.ae.stg_shippers
+[0m17:19:04.717587 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_purchase_order_status, now model.ae.stg_strings)
+[0m17:19:04.719298 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_shippers"
+[0m17:19:04.719555 [debug] [Thread-2 (]: Began compiling node model.ae.stg_strings
+[0m17:19:04.721068 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_strings"
+[0m17:19:04.721739 [debug] [Thread-1 (]: Began executing node model.ae.stg_shippers
+[0m17:19:04.721951 [debug] [Thread-2 (]: Began executing node model.ae.stg_strings
+[0m17:19:04.724208 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_shippers"
+[0m17:19:04.725566 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_strings"
+[0m17:19:04.726492 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_shippers"
+[0m17:19:04.726953 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_strings"
+[0m17:19:04.727157 [debug] [Thread-1 (]: On model.ae.stg_shippers: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_shippers"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_shippers
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.shippers
+)
+
+select * from source
+        );
+[0m17:19:04.727390 [debug] [Thread-2 (]: On model.ae.stg_strings: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_strings"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_strings
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.strings
+)
+
+select * from source
+        );
+[0m17:19:05.721760 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.994 seconds
+[0m17:19:05.723841 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x130052090>]}
+[0m17:19:05.724575 [info ] [Thread-2 (]: 18 of 19 OK created sql table model PUBLIC_stg_northwind.stg_strings ........... [[32mSUCCESS 1[0m in 1.01s]
+[0m17:19:05.725033 [debug] [Thread-2 (]: Finished running node model.ae.stg_strings
+[0m17:19:05.725468 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.998 seconds
+[0m17:19:05.725717 [debug] [Thread-2 (]: Began running node model.ae.stg_suppliers
+[0m17:19:05.726955 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1300513d0>]}
+[0m17:19:05.727333 [info ] [Thread-2 (]: 19 of 19 START sql table model PUBLIC_stg_northwind.stg_suppliers .............. [RUN]
+[0m17:19:05.727732 [info ] [Thread-1 (]: 17 of 19 OK created sql table model PUBLIC_stg_northwind.stg_shippers .......... [[32mSUCCESS 1[0m in 1.01s]
+[0m17:19:05.728014 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.ae.stg_strings, now model.ae.stg_suppliers)
+[0m17:19:05.728274 [debug] [Thread-1 (]: Finished running node model.ae.stg_shippers
+[0m17:19:05.728441 [debug] [Thread-2 (]: Began compiling node model.ae.stg_suppliers
+[0m17:19:05.730412 [debug] [Thread-2 (]: Writing injected SQL for node "model.ae.stg_suppliers"
+[0m17:19:05.731024 [debug] [Thread-2 (]: Began executing node model.ae.stg_suppliers
+[0m17:19:05.732270 [debug] [Thread-2 (]: Writing runtime sql for node "model.ae.stg_suppliers"
+[0m17:19:05.732754 [debug] [Thread-2 (]: Using snowflake connection "model.ae.stg_suppliers"
+[0m17:19:05.732925 [debug] [Thread-2 (]: On model.ae.stg_suppliers: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_suppliers"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_suppliers
+         as
+        (with source as (
+    select * from dl_northwind.PUBLIC.suppliers
+)
+
+select * from source
+        );
+[0m17:19:06.522783 [debug] [Thread-2 (]: SQL status: SUCCESS 1 in 0.789 seconds
+[0m17:19:06.527382 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'b567759e-f400-42e6-a0a2-1b82dbea6c3c', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x130051790>]}
+[0m17:19:06.527786 [info ] [Thread-2 (]: 19 of 19 OK created sql table model PUBLIC_stg_northwind.stg_suppliers ......... [[32mSUCCESS 1[0m in 0.80s]
+[0m17:19:06.528110 [debug] [Thread-2 (]: Finished running node model.ae.stg_suppliers
+[0m17:19:06.529013 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:19:06.529236 [debug] [MainThread]: Connection 'model.ae.stg_shippers' was left open.
+[0m17:19:06.529395 [debug] [MainThread]: On model.ae.stg_shippers: Close
+[0m17:19:06.652958 [debug] [MainThread]: Connection 'model.ae.stg_suppliers' was left open.
+[0m17:19:06.653859 [debug] [MainThread]: On model.ae.stg_suppliers: Close
+[0m17:19:06.796076 [info ] [MainThread]: 
+[0m17:19:06.796358 [info ] [MainThread]: Finished running 19 table models in 0 hours 0 minutes and 14.01 seconds (14.01s).
+[0m17:19:06.797982 [debug] [MainThread]: Command end result
+[0m17:19:06.813316 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/manifest.json
+[0m17:19:06.814263 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/semantic_manifest.json
+[0m17:19:06.817883 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mclain/Documents/Software Engineering/ae-dbt/target/run_results.json
+[0m17:19:06.818059 [info ] [MainThread]: 
+[0m17:19:06.818232 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:19:06.818359 [info ] [MainThread]: 
+[0m17:19:06.818495 [info ] [MainThread]: Done. PASS=19 WARN=0 ERROR=0 SKIP=0 TOTAL=19
+[0m17:19:06.819616 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 14.755062, "process_in_blocks": "0", "process_kernel_time": 0.304281, "process_mem_max_rss": "208060416", "process_out_blocks": "0", "process_user_time": 1.543455}
+[0m17:19:06.819810 [debug] [MainThread]: Command `dbt run` succeeded at 17:19:06.819767 after 14.76 seconds
+[0m17:19:06.819993 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103765130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x130333bf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x130333ad0>]}
+[0m17:19:06.820151 [debug] [MainThread]: Flushing usage events
+[0m17:19:07.290956 [debug] [MainThread]: An error was encountered while trying to flush usage events
