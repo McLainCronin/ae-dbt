@@ -1110,3 +1110,656 @@ syntax error line 6 at position 44 unexpected '}'.
 [0m16:38:47.580455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12caeeaf0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12cab0690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12cab07d0>]}
 [0m16:38:47.580686 [debug] [MainThread]: Flushing usage events
 [0m16:38:47.948457 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:43:53.142047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1073c8ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120f1bd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120f1bed0>]}
+
+
+============================== 16:43:53.145788 | bd133f15-e568-45d4-a80e-2a566679939f ==============================
+[0m16:43:53.145788 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:43:53.146093 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/mclain/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/mclain/Documents/Software Engineering/ae-dbt/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:43:53.813886 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'bd133f15-e568-45d4-a80e-2a566679939f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1302b2ea0>]}
+[0m16:43:53.842049 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'bd133f15-e568-45d4-a80e-2a566679939f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13018a690>]}
+[0m16:43:53.843117 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m16:43:53.911157 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:43:53.976986 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:43:53.977236 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:43:53.980004 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dl_northwind.staging
+[0m16:43:54.035941 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'bd133f15-e568-45d4-a80e-2a566679939f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1301ea050>]}
+[0m16:43:54.078754 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/manifest.json
+[0m16:43:54.079848 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/semantic_manifest.json
+[0m16:43:54.093620 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'bd133f15-e568-45d4-a80e-2a566679939f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120d9e030>]}
+[0m16:43:54.093989 [info ] [MainThread]: Found 1 model, 19 sources, 470 macros
+[0m16:43:54.094226 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bd133f15-e568-45d4-a80e-2a566679939f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1306ac4b0>]}
+[0m16:43:54.095392 [info ] [MainThread]: 
+[0m16:43:54.095590 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m16:43:54.095715 [info ] [MainThread]: 
+[0m16:43:54.095955 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:43:54.096447 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dl_northwind'
+[0m16:43:54.131049 [debug] [ThreadPool]: Using snowflake connection "list_dl_northwind"
+[0m16:43:54.131302 [debug] [ThreadPool]: On list_dl_northwind: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "connection_name": "list_dl_northwind"} */
+show terse schemas in database dl_northwind
+    limit 10000
+[0m16:43:54.131441 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:43:54.665577 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.534 seconds
+[0m16:43:54.667151 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dl_northwind, now list_dl_northwind_PUBLIC)
+[0m16:43:54.673055 [debug] [ThreadPool]: Using snowflake connection "list_dl_northwind_PUBLIC"
+[0m16:43:54.673268 [debug] [ThreadPool]: On list_dl_northwind_PUBLIC: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "connection_name": "list_dl_northwind_PUBLIC"} */
+show objects in dl_northwind.PUBLIC limit 10000;
+[0m16:43:54.800917 [debug] [ThreadPool]: SQL status: SUCCESS 20 in 0.127 seconds
+[0m16:43:54.805301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'bd133f15-e568-45d4-a80e-2a566679939f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1306b3450>]}
+[0m16:43:54.806207 [debug] [Thread-1 (]: Began running node model.ae.stg_customer
+[0m16:43:54.806522 [info ] [Thread-1 (]: 1 of 1 START sql view model PUBLIC.stg_customer ................................ [RUN]
+[0m16:43:54.806840 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dl_northwind_PUBLIC, now model.ae.stg_customer)
+[0m16:43:54.807070 [debug] [Thread-1 (]: Began compiling node model.ae.stg_customer
+[0m16:43:54.810962 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_customer"
+[0m16:43:54.811529 [debug] [Thread-1 (]: Began executing node model.ae.stg_customer
+[0m16:43:54.830636 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_customer"
+[0m16:43:54.831424 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_customer"
+[0m16:43:54.831632 [debug] [Thread-1 (]: On model.ae.stg_customer: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_customer"} */
+create or replace   view dl_northwind.PUBLIC.stg_customer
+  
+   as (
+    with source as (
+    select *
+    from ({ source('northwind', 'customer') })
+)
+
+select *
+from source
+  );
+[0m16:43:54.952778 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b99b6b-0004-747b-0003-964b0001e082
+[0m16:43:54.953166 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 6 at position 10 unexpected '{'.
+syntax error line 6 at position 19 unexpected ''northwind''.
+syntax error line 6 at position 44 unexpected '}'.
+[0m16:43:54.957426 [debug] [Thread-1 (]: Database Error in model stg_customer (models/example/staging/stg_customer.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 6 at position 10 unexpected '{'.
+  syntax error line 6 at position 19 unexpected ''northwind''.
+  syntax error line 6 at position 44 unexpected '}'.
+  compiled code at target/run/ae/models/example/staging/stg_customer.sql
+[0m16:43:54.958903 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'bd133f15-e568-45d4-a80e-2a566679939f', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x13156b050>]}
+[0m16:43:54.959401 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model PUBLIC.stg_customer ....................... [[31mERROR[0m in 0.15s]
+[0m16:43:54.959782 [debug] [Thread-1 (]: Finished running node model.ae.stg_customer
+[0m16:43:54.960141 [debug] [Thread-5 (]: Marking all children of 'model.ae.stg_customer' to be skipped because of status 'error'.  Reason: Database Error in model stg_customer (models/example/staging/stg_customer.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 6 at position 10 unexpected '{'.
+  syntax error line 6 at position 19 unexpected ''northwind''.
+  syntax error line 6 at position 44 unexpected '}'.
+  compiled code at target/run/ae/models/example/staging/stg_customer.sql.
+[0m16:43:54.961699 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:43:54.962024 [debug] [MainThread]: Connection 'model.ae.stg_customer' was left open.
+[0m16:43:54.962253 [debug] [MainThread]: On model.ae.stg_customer: Close
+[0m16:43:55.114686 [info ] [MainThread]: 
+[0m16:43:55.115081 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.02 seconds (1.02s).
+[0m16:43:55.115536 [debug] [MainThread]: Command end result
+[0m16:43:55.136525 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/manifest.json
+[0m16:43:55.137775 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/semantic_manifest.json
+[0m16:43:55.141451 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mclain/Documents/Software Engineering/ae-dbt/target/run_results.json
+[0m16:43:55.141687 [info ] [MainThread]: 
+[0m16:43:55.141954 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m16:43:55.142166 [info ] [MainThread]: 
+[0m16:43:55.142421 [error] [MainThread]:   Database Error in model stg_customer (models/example/staging/stg_customer.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 6 at position 10 unexpected '{'.
+  syntax error line 6 at position 19 unexpected ''northwind''.
+  syntax error line 6 at position 44 unexpected '}'.
+  compiled code at target/run/ae/models/example/staging/stg_customer.sql
+[0m16:43:55.142618 [info ] [MainThread]: 
+[0m16:43:55.142811 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m16:43:55.144545 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.0471907, "process_in_blocks": "0", "process_kernel_time": 0.356326, "process_mem_max_rss": "203866112", "process_out_blocks": "0", "process_user_time": 1.386391}
+[0m16:43:55.144767 [debug] [MainThread]: Command `dbt run` failed at 16:43:55.144720 after 2.05 seconds
+[0m16:43:55.144977 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1316e9b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x131670ff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x131671130>]}
+[0m16:43:55.145159 [debug] [MainThread]: Flushing usage events
+[0m16:43:55.558224 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:44:47.678895 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107218ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10861bd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10861bed0>]}
+
+
+============================== 16:44:47.682576 | 01a5a533-88f8-4e4f-8656-dfa88881e3d1 ==============================
+[0m16:44:47.682576 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:44:47.682949 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/mclain/.dbt', 'debug': 'False', 'warn_error': 'None', 'log_path': '/Users/mclain/Documents/Software Engineering/ae-dbt/logs', 'fail_fast': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'introspect': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt run', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:44:48.243683 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '01a5a533-88f8-4e4f-8656-dfa88881e3d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dcb2ea0>]}
+[0m16:44:48.271784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '01a5a533-88f8-4e4f-8656-dfa88881e3d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10db8a690>]}
+[0m16:44:48.272572 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m16:44:48.337475 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:44:48.402155 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:44:48.402470 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:44:48.405640 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.dl_northwind.staging
+[0m16:44:48.419878 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '01a5a533-88f8-4e4f-8656-dfa88881e3d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10dbea050>]}
+[0m16:44:48.456351 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/manifest.json
+[0m16:44:48.457470 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/semantic_manifest.json
+[0m16:44:48.470093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '01a5a533-88f8-4e4f-8656-dfa88881e3d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10829e030>]}
+[0m16:44:48.470434 [info ] [MainThread]: Found 1 model, 19 sources, 470 macros
+[0m16:44:48.470637 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '01a5a533-88f8-4e4f-8656-dfa88881e3d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e9ac4b0>]}
+[0m16:44:48.471722 [info ] [MainThread]: 
+[0m16:44:48.471929 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m16:44:48.472063 [info ] [MainThread]: 
+[0m16:44:48.472319 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:44:48.472777 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dl_northwind'
+[0m16:44:48.506563 [debug] [ThreadPool]: Using snowflake connection "list_dl_northwind"
+[0m16:44:48.506822 [debug] [ThreadPool]: On list_dl_northwind: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "connection_name": "list_dl_northwind"} */
+show terse schemas in database dl_northwind
+    limit 10000
+[0m16:44:48.506967 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:44:49.242170 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.735 seconds
+[0m16:44:49.245782 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dl_northwind, now list_dl_northwind_PUBLIC)
+[0m16:44:49.257159 [debug] [ThreadPool]: Using snowflake connection "list_dl_northwind_PUBLIC"
+[0m16:44:49.257470 [debug] [ThreadPool]: On list_dl_northwind_PUBLIC: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "connection_name": "list_dl_northwind_PUBLIC"} */
+show objects in dl_northwind.PUBLIC limit 10000;
+[0m16:44:49.432551 [debug] [ThreadPool]: SQL status: SUCCESS 20 in 0.175 seconds
+[0m16:44:49.438760 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '01a5a533-88f8-4e4f-8656-dfa88881e3d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e9b3450>]}
+[0m16:44:49.439745 [debug] [Thread-1 (]: Began running node model.ae.stg_customer
+[0m16:44:49.440077 [info ] [Thread-1 (]: 1 of 1 START sql view model PUBLIC.stg_customer ................................ [RUN]
+[0m16:44:49.440369 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dl_northwind_PUBLIC, now model.ae.stg_customer)
+[0m16:44:49.440616 [debug] [Thread-1 (]: Began compiling node model.ae.stg_customer
+[0m16:44:49.444815 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_customer"
+[0m16:44:49.445585 [debug] [Thread-1 (]: Began executing node model.ae.stg_customer
+[0m16:44:49.468211 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_customer"
+[0m16:44:49.469110 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_customer"
+[0m16:44:49.469337 [debug] [Thread-1 (]: On model.ae.stg_customer: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_customer"} */
+create or replace   view dl_northwind.PUBLIC.stg_customer
+  
+   as (
+    with source as (
+    select *
+    from ({ source('northwind', 'customer') })
+)
+
+select *
+from source
+  );
+[0m16:44:49.639387 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b99b6c-0004-747b-0003-964b0001e086
+[0m16:44:49.639702 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 6 at position 10 unexpected '{'.
+syntax error line 6 at position 19 unexpected ''northwind''.
+syntax error line 6 at position 44 unexpected '}'.
+[0m16:44:49.645058 [debug] [Thread-1 (]: Database Error in model stg_customer (models/example/staging/stg_customer.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 6 at position 10 unexpected '{'.
+  syntax error line 6 at position 19 unexpected ''northwind''.
+  syntax error line 6 at position 44 unexpected '}'.
+  compiled code at target/run/ae/models/example/staging/stg_customer.sql
+[0m16:44:49.646475 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '01a5a533-88f8-4e4f-8656-dfa88881e3d1', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f26b050>]}
+[0m16:44:49.646978 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model PUBLIC.stg_customer ....................... [[31mERROR[0m in 0.21s]
+[0m16:44:49.647317 [debug] [Thread-1 (]: Finished running node model.ae.stg_customer
+[0m16:44:49.647677 [debug] [Thread-5 (]: Marking all children of 'model.ae.stg_customer' to be skipped because of status 'error'.  Reason: Database Error in model stg_customer (models/example/staging/stg_customer.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 6 at position 10 unexpected '{'.
+  syntax error line 6 at position 19 unexpected ''northwind''.
+  syntax error line 6 at position 44 unexpected '}'.
+  compiled code at target/run/ae/models/example/staging/stg_customer.sql.
+[0m16:44:49.648758 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:44:49.648967 [debug] [MainThread]: Connection 'model.ae.stg_customer' was left open.
+[0m16:44:49.649132 [debug] [MainThread]: On model.ae.stg_customer: Close
+[0m16:44:49.806405 [info ] [MainThread]: 
+[0m16:44:49.807059 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.33 seconds (1.33s).
+[0m16:44:49.807977 [debug] [MainThread]: Command end result
+[0m16:44:49.826464 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/manifest.json
+[0m16:44:49.827520 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/semantic_manifest.json
+[0m16:44:49.831083 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mclain/Documents/Software Engineering/ae-dbt/target/run_results.json
+[0m16:44:49.831289 [info ] [MainThread]: 
+[0m16:44:49.831503 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m16:44:49.831851 [info ] [MainThread]: 
+[0m16:44:49.832158 [error] [MainThread]:   Database Error in model stg_customer (models/example/staging/stg_customer.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 6 at position 10 unexpected '{'.
+  syntax error line 6 at position 19 unexpected ''northwind''.
+  syntax error line 6 at position 44 unexpected '}'.
+  compiled code at target/run/ae/models/example/staging/stg_customer.sql
+[0m16:44:49.832350 [info ] [MainThread]: 
+[0m16:44:49.832513 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m16:44:49.834726 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.2007487, "process_in_blocks": "0", "process_kernel_time": 0.291074, "process_mem_max_rss": "205324288", "process_out_blocks": "0", "process_user_time": 1.342813}
+[0m16:44:49.835116 [debug] [MainThread]: Command `dbt run` failed at 16:44:49.835009 after 2.20 seconds
+[0m16:44:49.835427 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f3e9b20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f370ff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f371130>]}
+[0m16:44:49.835659 [debug] [MainThread]: Flushing usage events
+[0m16:44:50.356153 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:45:07.174303 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x107c2cec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e1bd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x108e1bed0>]}
+
+
+============================== 16:45:07.177452 | 60e14103-f948-4f52-994f-20e2fb535de5 ==============================
+[0m16:45:07.177452 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:45:07.177891 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/mclain/Documents/Software Engineering/ae-dbt/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/mclain/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m16:45:07.622874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '60e14103-f948-4f52-994f-20e2fb535de5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e6b2ea0>]}
+[0m16:45:07.650919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '60e14103-f948-4f52-994f-20e2fb535de5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e58a690>]}
+[0m16:45:07.651532 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m16:45:07.713633 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:45:07.756446 [info ] [MainThread]: Unable to do partial parsing because a project config has changed
+[0m16:45:07.756749 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '60e14103-f948-4f52-994f-20e2fb535de5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10e5e9c50>]}
+[0m16:45:08.256691 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.ae.staging
+[0m16:45:08.262621 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '60e14103-f948-4f52-994f-20e2fb535de5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f1a18b0>]}
+[0m16:45:08.299154 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/manifest.json
+[0m16:45:08.300396 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/semantic_manifest.json
+[0m16:45:08.309029 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '60e14103-f948-4f52-994f-20e2fb535de5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f6f3150>]}
+[0m16:45:08.309369 [info ] [MainThread]: Found 1 model, 19 sources, 470 macros
+[0m16:45:08.309585 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '60e14103-f948-4f52-994f-20e2fb535de5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10f2a58b0>]}
+[0m16:45:08.310703 [info ] [MainThread]: 
+[0m16:45:08.310952 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m16:45:08.311144 [info ] [MainThread]: 
+[0m16:45:08.311494 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:45:08.312018 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dl_northwind'
+[0m16:45:08.342523 [debug] [ThreadPool]: Using snowflake connection "list_dl_northwind"
+[0m16:45:08.342809 [debug] [ThreadPool]: On list_dl_northwind: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "connection_name": "list_dl_northwind"} */
+show terse schemas in database dl_northwind
+    limit 10000
+[0m16:45:08.342973 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:45:09.265203 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.922 seconds
+[0m16:45:09.268514 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dl_northwind, now list_dl_northwind_PUBLIC)
+[0m16:45:09.276876 [debug] [ThreadPool]: Using snowflake connection "list_dl_northwind_PUBLIC"
+[0m16:45:09.277358 [debug] [ThreadPool]: On list_dl_northwind_PUBLIC: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "connection_name": "list_dl_northwind_PUBLIC"} */
+show objects in dl_northwind.PUBLIC limit 10000;
+[0m16:45:09.456502 [debug] [ThreadPool]: SQL status: SUCCESS 20 in 0.179 seconds
+[0m16:45:09.463031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '60e14103-f948-4f52-994f-20e2fb535de5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118c21850>]}
+[0m16:45:09.464201 [debug] [Thread-1 (]: Began running node model.ae.stg_customer
+[0m16:45:09.464505 [info ] [Thread-1 (]: 1 of 1 START sql view model PUBLIC.stg_customer ................................ [RUN]
+[0m16:45:09.464742 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dl_northwind_PUBLIC, now model.ae.stg_customer)
+[0m16:45:09.464916 [debug] [Thread-1 (]: Began compiling node model.ae.stg_customer
+[0m16:45:09.468364 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_customer"
+[0m16:45:09.468895 [debug] [Thread-1 (]: Began executing node model.ae.stg_customer
+[0m16:45:09.486767 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_customer"
+[0m16:45:09.487490 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_customer"
+[0m16:45:09.487685 [debug] [Thread-1 (]: On model.ae.stg_customer: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_customer"} */
+create or replace   view dl_northwind.PUBLIC.stg_customer
+  
+   as (
+    with source as (
+    select *
+    from ({ source('northwind', 'customer') })
+)
+
+select *
+from source
+  );
+[0m16:45:09.663043 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b99b6d-0004-7477-0003-964b0002608e
+[0m16:45:09.663337 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 6 at position 10 unexpected '{'.
+syntax error line 6 at position 19 unexpected ''northwind''.
+syntax error line 6 at position 44 unexpected '}'.
+[0m16:45:09.666981 [debug] [Thread-1 (]: Database Error in model stg_customer (models/example/staging/stg_customer.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 6 at position 10 unexpected '{'.
+  syntax error line 6 at position 19 unexpected ''northwind''.
+  syntax error line 6 at position 44 unexpected '}'.
+  compiled code at target/run/ae/models/example/staging/stg_customer.sql
+[0m16:45:09.668008 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '60e14103-f948-4f52-994f-20e2fb535de5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118e8aa40>]}
+[0m16:45:09.668396 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model PUBLIC.stg_customer ....................... [[31mERROR[0m in 0.20s]
+[0m16:45:09.668720 [debug] [Thread-1 (]: Finished running node model.ae.stg_customer
+[0m16:45:09.669001 [debug] [Thread-5 (]: Marking all children of 'model.ae.stg_customer' to be skipped because of status 'error'.  Reason: Database Error in model stg_customer (models/example/staging/stg_customer.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 6 at position 10 unexpected '{'.
+  syntax error line 6 at position 19 unexpected ''northwind''.
+  syntax error line 6 at position 44 unexpected '}'.
+  compiled code at target/run/ae/models/example/staging/stg_customer.sql.
+[0m16:45:09.670192 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:45:09.670534 [debug] [MainThread]: Connection 'model.ae.stg_customer' was left open.
+[0m16:45:09.670770 [debug] [MainThread]: On model.ae.stg_customer: Close
+[0m16:45:09.823525 [info ] [MainThread]: 
+[0m16:45:09.823959 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 1.51 seconds (1.51s).
+[0m16:45:09.824485 [debug] [MainThread]: Command end result
+[0m16:45:09.839418 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/manifest.json
+[0m16:45:09.840482 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/semantic_manifest.json
+[0m16:45:09.843797 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mclain/Documents/Software Engineering/ae-dbt/target/run_results.json
+[0m16:45:09.843976 [info ] [MainThread]: 
+[0m16:45:09.844169 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m16:45:09.844318 [info ] [MainThread]: 
+[0m16:45:09.844507 [error] [MainThread]:   Database Error in model stg_customer (models/example/staging/stg_customer.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 6 at position 10 unexpected '{'.
+  syntax error line 6 at position 19 unexpected ''northwind''.
+  syntax error line 6 at position 44 unexpected '}'.
+  compiled code at target/run/ae/models/example/staging/stg_customer.sql
+[0m16:45:09.844646 [info ] [MainThread]: 
+[0m16:45:09.844791 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m16:45:09.845991 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.7138174, "process_in_blocks": "0", "process_kernel_time": 0.276111, "process_mem_max_rss": "209354752", "process_out_blocks": "0", "process_user_time": 1.76193}
+[0m16:45:09.846332 [debug] [MainThread]: Command `dbt run` failed at 16:45:09.846182 after 2.71 seconds
+[0m16:45:09.846576 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118e61130>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118e757f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x118e084d0>]}
+[0m16:45:09.846756 [debug] [MainThread]: Flushing usage events
+[0m16:45:10.389282 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:48:31.002861 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x103fc8ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10521bd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10521bed0>]}
+
+
+============================== 16:48:31.005727 | 88e42cfb-30d2-4fa9-ae3e-893c7ec128a7 ==============================
+[0m16:48:31.005727 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:48:31.006055 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/mclain/.dbt', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/Users/mclain/Documents/Software Engineering/ae-dbt/logs', 'warn_error': 'None', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt run', 'send_anonymous_usage_stats': 'True'}
+[0m16:48:31.433121 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '88e42cfb-30d2-4fa9-ae3e-893c7ec128a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1132b2ea0>]}
+[0m16:48:31.460207 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '88e42cfb-30d2-4fa9-ae3e-893c7ec128a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11318a690>]}
+[0m16:48:31.460728 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m16:48:31.521458 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:48:31.576994 [debug] [MainThread]: Partial parsing enabled: 2 files deleted, 2 files added, 0 files changed.
+[0m16:48:31.577346 [debug] [MainThread]: Partial parsing: added file: ae://models/staging/stg_customer.sql
+[0m16:48:31.577535 [debug] [MainThread]: Partial parsing: added file: ae://models/staging/source.yml
+[0m16:48:31.577714 [debug] [MainThread]: Partial parsing: deleted file: ae://models/example/staging/stg_customer.sql
+[0m16:48:31.740144 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '88e42cfb-30d2-4fa9-ae3e-893c7ec128a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1131ebd50>]}
+[0m16:48:31.773320 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/manifest.json
+[0m16:48:31.774622 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/semantic_manifest.json
+[0m16:48:31.781792 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '88e42cfb-30d2-4fa9-ae3e-893c7ec128a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104c72990>]}
+[0m16:48:31.782022 [info ] [MainThread]: Found 1 model, 19 sources, 470 macros
+[0m16:48:31.782173 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '88e42cfb-30d2-4fa9-ae3e-893c7ec128a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1140a6510>]}
+[0m16:48:31.783037 [info ] [MainThread]: 
+[0m16:48:31.783197 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m16:48:31.783318 [info ] [MainThread]: 
+[0m16:48:31.783746 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:48:31.784265 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dl_northwind'
+[0m16:48:31.813770 [debug] [ThreadPool]: Using snowflake connection "list_dl_northwind"
+[0m16:48:31.814038 [debug] [ThreadPool]: On list_dl_northwind: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "connection_name": "list_dl_northwind"} */
+show terse schemas in database dl_northwind
+    limit 10000
+[0m16:48:31.814190 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:48:32.429982 [debug] [ThreadPool]: SQL status: SUCCESS 2 in 0.615 seconds
+[0m16:48:32.432707 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dl_northwind, now create_dl_northwind_PUBLIC_stg_northwind)
+[0m16:48:32.434231 [debug] [ThreadPool]: Creating schema "database: "dl_northwind"
+schema: "PUBLIC_stg_northwind"
+"
+[0m16:48:32.437362 [debug] [ThreadPool]: Using snowflake connection "create_dl_northwind_PUBLIC_stg_northwind"
+[0m16:48:32.437605 [debug] [ThreadPool]: On create_dl_northwind_PUBLIC_stg_northwind: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "connection_name": "create_dl_northwind_PUBLIC_stg_northwind"} */
+create schema if not exists dl_northwind.PUBLIC_stg_northwind
+[0m16:48:32.652899 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.215 seconds
+[0m16:48:32.656401 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_dl_northwind_PUBLIC_stg_northwind, now list_dl_northwind_PUBLIC_stg_northwind)
+[0m16:48:32.663071 [debug] [ThreadPool]: Using snowflake connection "list_dl_northwind_PUBLIC_stg_northwind"
+[0m16:48:32.663308 [debug] [ThreadPool]: On list_dl_northwind_PUBLIC_stg_northwind: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "connection_name": "list_dl_northwind_PUBLIC_stg_northwind"} */
+show objects in dl_northwind.PUBLIC_stg_northwind limit 10000;
+[0m16:48:32.788750 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.125 seconds
+[0m16:48:32.791348 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '88e42cfb-30d2-4fa9-ae3e-893c7ec128a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117e56dd0>]}
+[0m16:48:32.792310 [debug] [Thread-1 (]: Began running node model.ae.stg_customer
+[0m16:48:32.792626 [info ] [Thread-1 (]: 1 of 1 START sql table model PUBLIC_stg_northwind.stg_customer ................. [RUN]
+[0m16:48:32.792972 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dl_northwind_PUBLIC_stg_northwind, now model.ae.stg_customer)
+[0m16:48:32.793173 [debug] [Thread-1 (]: Began compiling node model.ae.stg_customer
+[0m16:48:32.796830 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_customer"
+[0m16:48:32.797485 [debug] [Thread-1 (]: Began executing node model.ae.stg_customer
+[0m16:48:32.820117 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_customer"
+[0m16:48:32.821025 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_customer"
+[0m16:48:32.821237 [debug] [Thread-1 (]: On model.ae.stg_customer: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_customer"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_customer
+         as
+        (with source as (
+    select *
+    from ({ source('northwind', 'customer') })
+)
+
+select *
+from source
+        );
+[0m16:48:32.956040 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b99b70-0004-7472-0003-964b00023092
+[0m16:48:32.956414 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 5 at position 10 unexpected '{'.
+syntax error line 5 at position 19 unexpected ''northwind''.
+syntax error line 5 at position 44 unexpected '}'.
+[0m16:48:32.960550 [debug] [Thread-1 (]: Database Error in model stg_customer (models/staging/stg_customer.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 10 unexpected '{'.
+  syntax error line 5 at position 19 unexpected ''northwind''.
+  syntax error line 5 at position 44 unexpected '}'.
+  compiled code at target/run/ae/models/staging/stg_customer.sql
+[0m16:48:32.961860 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '88e42cfb-30d2-4fa9-ae3e-893c7ec128a7', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117e16150>]}
+[0m16:48:32.962326 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model PUBLIC_stg_northwind.stg_customer ........ [[31mERROR[0m in 0.17s]
+[0m16:48:32.962696 [debug] [Thread-1 (]: Finished running node model.ae.stg_customer
+[0m16:48:32.962997 [debug] [Thread-5 (]: Marking all children of 'model.ae.stg_customer' to be skipped because of status 'error'.  Reason: Database Error in model stg_customer (models/staging/stg_customer.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 10 unexpected '{'.
+  syntax error line 5 at position 19 unexpected ''northwind''.
+  syntax error line 5 at position 44 unexpected '}'.
+  compiled code at target/run/ae/models/staging/stg_customer.sql.
+[0m16:48:32.964295 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:48:32.964530 [debug] [MainThread]: Connection 'model.ae.stg_customer' was left open.
+[0m16:48:32.964707 [debug] [MainThread]: On model.ae.stg_customer: Close
+[0m16:48:33.173255 [info ] [MainThread]: 
+[0m16:48:33.173794 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 1.39 seconds (1.39s).
+[0m16:48:33.174343 [debug] [MainThread]: Command end result
+[0m16:48:33.191812 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/manifest.json
+[0m16:48:33.193225 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/semantic_manifest.json
+[0m16:48:33.197830 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mclain/Documents/Software Engineering/ae-dbt/target/run_results.json
+[0m16:48:33.198068 [info ] [MainThread]: 
+[0m16:48:33.198322 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m16:48:33.198533 [info ] [MainThread]: 
+[0m16:48:33.198787 [error] [MainThread]:   Database Error in model stg_customer (models/staging/stg_customer.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 10 unexpected '{'.
+  syntax error line 5 at position 19 unexpected ''northwind''.
+  syntax error line 5 at position 44 unexpected '}'.
+  compiled code at target/run/ae/models/staging/stg_customer.sql
+[0m16:48:33.198990 [info ] [MainThread]: 
+[0m16:48:33.199186 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m16:48:33.200770 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.2367156, "process_in_blocks": "0", "process_kernel_time": 0.262372, "process_mem_max_rss": "208617472", "process_out_blocks": "0", "process_user_time": 1.426505}
+[0m16:48:33.201156 [debug] [MainThread]: Command `dbt run` failed at 16:48:33.201080 after 2.24 seconds
+[0m16:48:33.201421 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117ca7b70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120058370>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120058690>]}
+[0m16:48:33.201660 [debug] [MainThread]: Flushing usage events
+[0m16:48:33.693217 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:49:55.272907 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x104518ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10611bd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10611bed0>]}
+
+
+============================== 16:49:55.276182 | 07036049-c814-4c13-9554-68da71769bb0 ==============================
+[0m16:49:55.276182 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:49:55.276628 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/mclain/.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/Users/mclain/Documents/Software Engineering/ae-dbt/logs', 'version_check': 'True', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt run', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:49:55.703108 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '07036049-c814-4c13-9554-68da71769bb0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1139b2ea0>]}
+[0m16:49:55.730400 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '07036049-c814-4c13-9554-68da71769bb0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11378a690>]}
+[0m16:49:55.730956 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m16:49:55.813072 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:49:55.868727 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:49:55.868972 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:49:55.884530 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '07036049-c814-4c13-9554-68da71769bb0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1137ea050>]}
+[0m16:49:55.918100 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/manifest.json
+[0m16:49:55.919211 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/semantic_manifest.json
+[0m16:49:55.927047 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '07036049-c814-4c13-9554-68da71769bb0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105f9e030>]}
+[0m16:49:55.927335 [info ] [MainThread]: Found 1 model, 19 sources, 470 macros
+[0m16:49:55.927511 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '07036049-c814-4c13-9554-68da71769bb0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113dac4b0>]}
+[0m16:49:55.928489 [info ] [MainThread]: 
+[0m16:49:55.928657 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m16:49:55.928773 [info ] [MainThread]: 
+[0m16:49:55.929003 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:49:55.929491 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dl_northwind'
+[0m16:49:55.960112 [debug] [ThreadPool]: Using snowflake connection "list_dl_northwind"
+[0m16:49:55.960358 [debug] [ThreadPool]: On list_dl_northwind: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "connection_name": "list_dl_northwind"} */
+show terse schemas in database dl_northwind
+    limit 10000
+[0m16:49:55.960494 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:49:56.652107 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.691 seconds
+[0m16:49:56.655448 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dl_northwind, now list_dl_northwind_PUBLIC_stg_northwind)
+[0m16:49:56.662060 [debug] [ThreadPool]: Using snowflake connection "list_dl_northwind_PUBLIC_stg_northwind"
+[0m16:49:56.662353 [debug] [ThreadPool]: On list_dl_northwind_PUBLIC_stg_northwind: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "connection_name": "list_dl_northwind_PUBLIC_stg_northwind"} */
+show objects in dl_northwind.PUBLIC_stg_northwind limit 10000;
+[0m16:49:56.787376 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.125 seconds
+[0m16:49:56.790819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '07036049-c814-4c13-9554-68da71769bb0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113db3450>]}
+[0m16:49:56.792521 [debug] [Thread-1 (]: Began running node model.ae.stg_customer
+[0m16:49:56.792999 [info ] [Thread-1 (]: 1 of 1 START sql table model PUBLIC_stg_northwind.stg_customer ................. [RUN]
+[0m16:49:56.793463 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dl_northwind_PUBLIC_stg_northwind, now model.ae.stg_customer)
+[0m16:49:56.793840 [debug] [Thread-1 (]: Began compiling node model.ae.stg_customer
+[0m16:49:56.800708 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_customer"
+[0m16:49:56.801442 [debug] [Thread-1 (]: Began executing node model.ae.stg_customer
+[0m16:49:56.823953 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_customer"
+[0m16:49:56.824916 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_customer"
+[0m16:49:56.825187 [debug] [Thread-1 (]: On model.ae.stg_customer: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_customer"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_customer
+         as
+        (with source as (
+    select *
+    from ({ source('northwind', 'customer') })
+)
+
+select *
+from source
+        );
+[0m16:49:56.981478 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b99b71-0004-7475-0003-964b0001f0be
+[0m16:49:56.982239 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 001003 (42000): SQL compilation error:
+syntax error line 5 at position 10 unexpected '{'.
+syntax error line 5 at position 19 unexpected ''northwind''.
+syntax error line 5 at position 44 unexpected '}'.
+[0m16:49:56.989049 [debug] [Thread-1 (]: Database Error in model stg_customer (models/staging/stg_customer.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 10 unexpected '{'.
+  syntax error line 5 at position 19 unexpected ''northwind''.
+  syntax error line 5 at position 44 unexpected '}'.
+  compiled code at target/run/ae/models/staging/stg_customer.sql
+[0m16:49:56.990713 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '07036049-c814-4c13-9554-68da71769bb0', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114d69310>]}
+[0m16:49:56.991292 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model PUBLIC_stg_northwind.stg_customer ........ [[31mERROR[0m in 0.20s]
+[0m16:49:56.991713 [debug] [Thread-1 (]: Finished running node model.ae.stg_customer
+[0m16:49:56.992078 [debug] [Thread-5 (]: Marking all children of 'model.ae.stg_customer' to be skipped because of status 'error'.  Reason: Database Error in model stg_customer (models/staging/stg_customer.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 10 unexpected '{'.
+  syntax error line 5 at position 19 unexpected ''northwind''.
+  syntax error line 5 at position 44 unexpected '}'.
+  compiled code at target/run/ae/models/staging/stg_customer.sql.
+[0m16:49:56.993665 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:49:56.993983 [debug] [MainThread]: Connection 'model.ae.stg_customer' was left open.
+[0m16:49:56.994237 [debug] [MainThread]: On model.ae.stg_customer: Close
+[0m16:49:57.163200 [info ] [MainThread]: 
+[0m16:49:57.163798 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 1.23 seconds (1.23s).
+[0m16:49:57.164355 [debug] [MainThread]: Command end result
+[0m16:49:57.183311 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/manifest.json
+[0m16:49:57.184556 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/semantic_manifest.json
+[0m16:49:57.188514 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mclain/Documents/Software Engineering/ae-dbt/target/run_results.json
+[0m16:49:57.188800 [info ] [MainThread]: 
+[0m16:49:57.189092 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m16:49:57.189344 [info ] [MainThread]: 
+[0m16:49:57.189586 [error] [MainThread]:   Database Error in model stg_customer (models/staging/stg_customer.sql)
+  001003 (42000): SQL compilation error:
+  syntax error line 5 at position 10 unexpected '{'.
+  syntax error line 5 at position 19 unexpected ''northwind''.
+  syntax error line 5 at position 44 unexpected '}'.
+  compiled code at target/run/ae/models/staging/stg_customer.sql
+[0m16:49:57.189755 [info ] [MainThread]: 
+[0m16:49:57.189926 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m16:49:57.191450 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 1.9586549, "process_in_blocks": "0", "process_kernel_time": 0.26553, "process_mem_max_rss": "204734464", "process_out_blocks": "0", "process_user_time": 1.29335}
+[0m16:49:57.191764 [debug] [MainThread]: Command `dbt run` failed at 16:49:57.191699 after 1.96 seconds
+[0m16:49:57.192036 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114afa990>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11701f4d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x11701eb70>]}
+[0m16:49:57.192267 [debug] [MainThread]: Flushing usage events
+[0m16:49:57.584609 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:51:09.231287 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x110c18ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113117d90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113117ed0>]}
+
+
+============================== 16:51:09.234579 | 0e6adb96-41f2-4028-9534-46530d0be28a ==============================
+[0m16:51:09.234579 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:51:09.234974 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/mclain/Documents/Software Engineering/ae-dbt/logs', 'profiles_dir': '/Users/mclain/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'False', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'invocation_command': 'dbt compile', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m16:51:09.665839 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '0e6adb96-41f2-4028-9534-46530d0be28a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1207b2ea0>]}
+[0m16:51:09.694304 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '0e6adb96-41f2-4028-9534-46530d0be28a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x12068e690>]}
+[0m16:51:09.694871 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m16:51:09.758798 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:51:09.814611 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:51:09.814856 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:51:09.831406 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '0e6adb96-41f2-4028-9534-46530d0be28a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1206ea050>]}
+[0m16:51:09.866586 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/manifest.json
+[0m16:51:09.867850 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/semantic_manifest.json
+[0m16:51:09.874641 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '0e6adb96-41f2-4028-9534-46530d0be28a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120ba2030>]}
+[0m16:51:09.874911 [info ] [MainThread]: Found 1 model, 19 sources, 470 macros
+[0m16:51:09.875089 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0e6adb96-41f2-4028-9534-46530d0be28a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x120c83930>]}
+[0m16:51:09.876079 [info ] [MainThread]: 
+[0m16:51:09.876263 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m16:51:09.876384 [info ] [MainThread]: 
+[0m16:51:09.876627 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:51:09.877073 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dl_northwind_PUBLIC_stg_northwind'
+[0m16:51:09.910669 [debug] [ThreadPool]: Using snowflake connection "list_dl_northwind_PUBLIC_stg_northwind"
+[0m16:51:09.910939 [debug] [ThreadPool]: On list_dl_northwind_PUBLIC_stg_northwind: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "connection_name": "list_dl_northwind_PUBLIC_stg_northwind"} */
+show objects in dl_northwind.PUBLIC_stg_northwind limit 10000;
+[0m16:51:09.911108 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:51:10.492185 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.581 seconds
+[0m16:51:10.495166 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '0e6adb96-41f2-4028-9534-46530d0be28a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121a55300>]}
+[0m16:51:10.497463 [debug] [Thread-1 (]: Began running node model.ae.stg_customer
+[0m16:51:10.497827 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dl_northwind_PUBLIC_stg_northwind, now model.ae.stg_customer)
+[0m16:51:10.498092 [debug] [Thread-1 (]: Began compiling node model.ae.stg_customer
+[0m16:51:10.502818 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_customer"
+[0m16:51:10.503453 [debug] [Thread-1 (]: Began executing node model.ae.stg_customer
+[0m16:51:10.503902 [debug] [Thread-1 (]: Finished running node model.ae.stg_customer
+[0m16:51:10.504540 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:51:10.504737 [debug] [MainThread]: Connection 'model.ae.stg_customer' was left open.
+[0m16:51:10.504909 [debug] [MainThread]: On model.ae.stg_customer: Close
+[0m16:51:10.671697 [debug] [MainThread]: Command end result
+[0m16:51:10.689301 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/manifest.json
+[0m16:51:10.690377 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/semantic_manifest.json
+[0m16:51:10.694725 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mclain/Documents/Software Engineering/ae-dbt/target/run_results.json
+[0m16:51:10.696145 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": true, "command_wall_clock_time": 1.5037181, "process_in_blocks": "0", "process_kernel_time": 0.257859, "process_mem_max_rss": "202489856", "process_out_blocks": "0", "process_user_time": 1.245953}
+[0m16:51:10.696423 [debug] [MainThread]: Command `dbt compile` succeeded at 16:51:10.696362 after 1.50 seconds
+[0m16:51:10.696654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113188290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121af1ff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x121af1910>]}
+[0m16:51:10.696858 [debug] [MainThread]: Flushing usage events
+[0m16:51:11.251058 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:52:30.467081 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x112a18ec0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113c1bd90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113c1bed0>]}
+
+
+============================== 16:52:30.471049 | 9b799080-1ee0-468d-a511-38eddc6d0111 ==============================
+[0m16:52:30.471049 [info ] [MainThread]: Running with dbt=1.9.1
+[0m16:52:30.471398 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/mclain/Documents/Software Engineering/ae-dbt/logs', 'profiles_dir': '/Users/mclain/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:52:31.128323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9b799080-1ee0-468d-a511-38eddc6d0111', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x122db2ea0>]}
+[0m16:52:31.155698 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '9b799080-1ee0-468d-a511-38eddc6d0111', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x122c8a690>]}
+[0m16:52:31.156599 [info ] [MainThread]: Registered adapter: snowflake=1.9.0
+[0m16:52:31.225127 [debug] [MainThread]: checksum: 5e8d1596cf4eae33c11286bbb248a722d21b9f00d8a7ced8137c642517055418, vars: {}, profile: , target: , version: 1.9.1
+[0m16:52:31.287464 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m16:52:31.287833 [debug] [MainThread]: Partial parsing: updated file: ae://models/staging/stg_customer.sql
+[0m16:52:31.409900 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '9b799080-1ee0-468d-a511-38eddc6d0111', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1230ec250>]}
+[0m16:52:31.445533 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/manifest.json
+[0m16:52:31.446824 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/semantic_manifest.json
+[0m16:52:31.459723 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '9b799080-1ee0-468d-a511-38eddc6d0111', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x113a9e030>]}
+[0m16:52:31.460032 [info ] [MainThread]: Found 1 model, 19 sources, 470 macros
+[0m16:52:31.460292 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9b799080-1ee0-468d-a511-38eddc6d0111', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1231ac050>]}
+[0m16:52:31.461263 [info ] [MainThread]: 
+[0m16:52:31.461430 [info ] [MainThread]: Concurrency: 2 threads (target='dev')
+[0m16:52:31.461547 [info ] [MainThread]: 
+[0m16:52:31.461760 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m16:52:31.462236 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_dl_northwind'
+[0m16:52:31.495581 [debug] [ThreadPool]: Using snowflake connection "list_dl_northwind"
+[0m16:52:31.495860 [debug] [ThreadPool]: On list_dl_northwind: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "connection_name": "list_dl_northwind"} */
+show terse schemas in database dl_northwind
+    limit 10000
+[0m16:52:31.496014 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m16:52:32.330328 [debug] [ThreadPool]: SQL status: SUCCESS 3 in 0.834 seconds
+[0m16:52:32.333874 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_dl_northwind, now list_dl_northwind_PUBLIC_stg_northwind)
+[0m16:52:32.342348 [debug] [ThreadPool]: Using snowflake connection "list_dl_northwind_PUBLIC_stg_northwind"
+[0m16:52:32.342825 [debug] [ThreadPool]: On list_dl_northwind_PUBLIC_stg_northwind: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "connection_name": "list_dl_northwind_PUBLIC_stg_northwind"} */
+show objects in dl_northwind.PUBLIC_stg_northwind limit 10000;
+[0m16:52:32.497329 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.154 seconds
+[0m16:52:32.499774 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '9b799080-1ee0-468d-a511-38eddc6d0111', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1232d6820>]}
+[0m16:52:32.500944 [debug] [Thread-1 (]: Began running node model.ae.stg_customer
+[0m16:52:32.501372 [info ] [Thread-1 (]: 1 of 1 START sql table model PUBLIC_stg_northwind.stg_customer ................. [RUN]
+[0m16:52:32.501681 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_dl_northwind_PUBLIC_stg_northwind, now model.ae.stg_customer)
+[0m16:52:32.502479 [debug] [Thread-1 (]: Began compiling node model.ae.stg_customer
+[0m16:52:32.507645 [debug] [Thread-1 (]: Writing injected SQL for node "model.ae.stg_customer"
+[0m16:52:32.508522 [debug] [Thread-1 (]: Began executing node model.ae.stg_customer
+[0m16:52:32.530952 [debug] [Thread-1 (]: Writing runtime sql for node "model.ae.stg_customer"
+[0m16:52:32.531902 [debug] [Thread-1 (]: Using snowflake connection "model.ae.stg_customer"
+[0m16:52:32.532184 [debug] [Thread-1 (]: On model.ae.stg_customer: /* {"app": "dbt", "dbt_version": "1.9.1", "profile_name": "ae", "target_name": "dev", "node_id": "model.ae.stg_customer"} */
+create or replace transient table dl_northwind.PUBLIC_stg_northwind.stg_customer
+         as
+        (with source as (
+    select * from dl_northwind.dl_northwind.customer
+)
+
+select * from source
+        );
+[0m16:52:32.716777 [debug] [Thread-1 (]: Snowflake adapter: Snowflake query id: 01b99b74-0004-747b-0003-964b0001e0b2
+[0m16:52:32.717126 [debug] [Thread-1 (]: Snowflake adapter: Snowflake error: 002003 (02000): SQL compilation error:
+Schema 'DL_NORTHWIND.DL_NORTHWIND' does not exist or not authorized.
+[0m16:52:32.723175 [debug] [Thread-1 (]: Database Error in model stg_customer (models/staging/stg_customer.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'DL_NORTHWIND.DL_NORTHWIND' does not exist or not authorized.
+  compiled code at target/run/ae/models/staging/stg_customer.sql
+[0m16:52:32.725284 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '9b799080-1ee0-468d-a511-38eddc6d0111', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123b32810>]}
+[0m16:52:32.725911 [error] [Thread-1 (]: 1 of 1 ERROR creating sql table model PUBLIC_stg_northwind.stg_customer ........ [[31mERROR[0m in 0.22s]
+[0m16:52:32.726303 [debug] [Thread-1 (]: Finished running node model.ae.stg_customer
+[0m16:52:32.726778 [debug] [Thread-5 (]: Marking all children of 'model.ae.stg_customer' to be skipped because of status 'error'.  Reason: Database Error in model stg_customer (models/staging/stg_customer.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'DL_NORTHWIND.DL_NORTHWIND' does not exist or not authorized.
+  compiled code at target/run/ae/models/staging/stg_customer.sql.
+[0m16:52:32.728410 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m16:52:32.728690 [debug] [MainThread]: Connection 'model.ae.stg_customer' was left open.
+[0m16:52:32.728933 [debug] [MainThread]: On model.ae.stg_customer: Close
+[0m16:52:32.878269 [info ] [MainThread]: 
+[0m16:52:32.878662 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 1.42 seconds (1.42s).
+[0m16:52:32.879117 [debug] [MainThread]: Command end result
+[0m16:52:32.896646 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/manifest.json
+[0m16:52:32.897672 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/mclain/Documents/Software Engineering/ae-dbt/target/semantic_manifest.json
+[0m16:52:32.901133 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/mclain/Documents/Software Engineering/ae-dbt/target/run_results.json
+[0m16:52:32.901322 [info ] [MainThread]: 
+[0m16:52:32.901540 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m16:52:32.901755 [info ] [MainThread]: 
+[0m16:52:32.901959 [error] [MainThread]:   Database Error in model stg_customer (models/staging/stg_customer.sql)
+  002003 (02000): SQL compilation error:
+  Schema 'DL_NORTHWIND.DL_NORTHWIND' does not exist or not authorized.
+  compiled code at target/run/ae/models/staging/stg_customer.sql
+[0m16:52:32.902118 [info ] [MainThread]: 
+[0m16:52:32.902278 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m16:52:32.904185 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.48107, "process_in_blocks": "0", "process_kernel_time": 0.349881, "process_mem_max_rss": "207175680", "process_out_blocks": "0", "process_user_time": 1.454146}
+[0m16:52:32.904601 [debug] [MainThread]: Command `dbt run` failed at 16:52:32.904507 after 2.48 seconds
+[0m16:52:32.904927 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x1238f2c50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123d33390>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x123d337f0>]}
+[0m16:52:32.905167 [debug] [MainThread]: Flushing usage events
+[0m16:52:33.265282 [debug] [MainThread]: An error was encountered while trying to flush usage events
