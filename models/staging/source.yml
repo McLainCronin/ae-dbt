@@ -1,12 +1,13 @@
 version: 2
 sources: 
   - name: northwind
-    schema: dl_northwind
+    database: dl_northwind
+    schema: PUBLIC
     tables:
       - name: customer
       - name: employee_privileges
       - name: employees
-      - name: inventory_ transaction_types
+      - name: inventory_transaction_types
       - name: inventory_transactions
       - name: invoices
       - name: order_details
