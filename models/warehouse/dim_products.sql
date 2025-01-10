@@ -24,7 +24,7 @@ with source as (
         current_timestamp() AS insertion_timestamp
     from {{ ref('stg_products')}} p
     left join {{ ref('stg_suppliers')}} s
-        on s.company = company  -- Removed p. prefix
+        on s.company = company
 ),
 
 unique_source as (
