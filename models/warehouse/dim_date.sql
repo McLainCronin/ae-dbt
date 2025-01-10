@@ -1,0 +1,17 @@
+SELECT
+    TO_CHAR(DATEADD(DAY, SEQ4() - 1, '2014-01-01'), 'YYYY-MM-DD') AS id,
+    DATEADD(DAY, SEQ4() - 1, '2014-01-01') AS full_date,
+    EXTRACT(YEAR FROM DATEADD(DAY, SEQ4() - 1, '2014-01-01')) AS year,
+    EXTRACT(WEEK FROM DATEADD(DAY, SEQ4() - 1, '2014-01-01')) AS year_week,
+    EXTRACT(DAYOFYEAR FROM DATEADD(DAY, SEQ4() - 1, '2014-01-01')) AS year_day,
+    EXTRACT(YEAR FROM DATEADD(DAY, SEQ4() - 1, '2014-01-01')) AS fiscal_year,
+    QUARTER(DATEADD(DAY, SEQ4() - 1, '2014-01-01')) AS fiscal_qtr,
+    EXTRACT(MONTH FROM DATEADD(DAY, SEQ4() - 1, '2014-01-01')) AS month,
+    MONTHNAME(DATEADD(DAY, SEQ4() - 1, '2014-01-01')) AS month_name,
+    EXTRACT(DAYOFWEEK FROM DATEADD(DAY, SEQ4() - 1, '2014-01-01')) AS week_day,
+    RTRIM(TO_CHAR(DATEADD(DAY, SEQ4() - 1, '2014-01-01'), 'Day')) AS day_name,
+    CASE 
+        WHEN RTRIM(TO_CHAR(DATEADD(DAY, SEQ4() - 1, '2014-01-01'), 'Day')) IN ('Sunday', 'Saturday') THEN 0
+        ELSE 1 
+    END AS day_is_weekday
+FROM TABLE(GENERATOR(ROWCOUNT => 13149))
